@@ -18,6 +18,10 @@ export default {
       fontSize: {
         "2xs": ".625rem",
         "3.25xs": "13px",
+        1: "0.75rem",
+        2: "0.9rem",
+        10: "0.625rem",
+        11: "0.6875rem",
         12: "0.75rem",
         14: "0.875rem",
         15: "0,9rem",
