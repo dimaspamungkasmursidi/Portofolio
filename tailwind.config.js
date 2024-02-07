@@ -18,6 +18,8 @@ export default {
       fontSize: {
         "2xs": ".625rem",
         "3.25xs": "13px",
+        0: "0.60rem",
+        0.5: "0.625rem",
         1: "0.75rem",
         2: "0.9rem",
         10: "0.625rem",
@@ -57,5 +59,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
