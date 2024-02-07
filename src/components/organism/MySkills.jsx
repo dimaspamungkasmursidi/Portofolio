@@ -1,4 +1,5 @@
 import Card from "../molecules/Card";
+import Modal from "../molecules/Modal";
 
 const items = [
   {
@@ -19,31 +20,30 @@ const items = [
 
 const MySkills = () => {
   return (
-      <>
-        <section className="w-full bg-secondary p-10 px-12 mt-2">
-          {/* Title */}
-          <div className="w-full mb-20">
-            <h1 className="font-inter text-primary text-28 font-bold mb-1">
-              My Skills
-            </h1>
-            <hr className="border-tertiary border-2 rounded w-20"/>
-          </div>
+    <>
+      <section className="w-full bg-secondary p-10 px-12 mt-2">
+        {/* Title */}
+        <div className="w-full mb-20">
+          <h1 className="font-inter text-primary text-28 font-bold mb-1">
+            My Skills
+          </h1>
+          <hr className="border-tertiary border-2 rounded w-20" />
+        </div>
 
-          {/* Card */}
-              <div className="grid grid-cols-5 gap-2">
-                {items.map((item) => (
-                    <Card
-                        className="w-44 border-x border-y border-tertiary rounded flex items-center px-3 py-3"
-                        key={item.id}
-                    >
-                      <Card.Image image={item.image}/>
-                      <Card.Title level={item.level} title={item.title} modalName={"modal-" + item.id}/>
-                      <Card.Modal desc={item.description} modalName={"modal-" + item.id}/>
-                    </Card>
-                ))}
-              </div>
-        </section>
-      </>
+        {/* Card */}
+        <div className="grid grid-cols-5 gap-2">
+          {items.map((item) => (
+            <Card
+              className="w-44 border-x border-y border-tertiary rounded flex items-center px-3 py-3"
+              key={item.id}
+            >
+              <Card.Image image={item.image} />
+              <Card.Title level={item.level} title={item.title} />
+            </Card>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
