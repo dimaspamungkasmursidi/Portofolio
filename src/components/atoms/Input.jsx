@@ -1,6 +1,7 @@
 const Input = () => {
     return ( 
         <>
+        {/* ABAIKEUN */}
         {/* Modal Button */}
         <div
           className="flex fle items-center cursor-pointer border-2 border-zinc-500"
@@ -36,8 +37,11 @@ const Input = () => {
             <p className="font-montserrat text-1">pp</p>
           </div>
         </dialog>
+        </>
+     );
+}
 
-export default MySkills;
+export default Input;
 
 // const items = [
 //   {
@@ -141,9 +145,3 @@ export default MySkills;
 //     description: "MySQL is a relational database management system",
 //   },
 // ];
-
-        </>
-     );
-}
- 
-export default Input;

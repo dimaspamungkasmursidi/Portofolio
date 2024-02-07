@@ -4,13 +4,13 @@ const Modal = (props) => {
   return (
     <>
       {/* Modal Button */}
-      <div
+      {/* <div
         className="flex items-center cursor-pointer border-2 border-zinc-500"
         onClick={() => document.getElementById("my_modal_3").showModal()}
-      ></div>
+      ></div> */}
       {/* Modal Content */}
       <dialog
-        id="my_modal_3"
+        id="cardModal"
         className="modal"
         onClick={(e) => e.target.close()}
       >

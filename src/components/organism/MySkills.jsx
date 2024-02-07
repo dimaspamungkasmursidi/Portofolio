@@ -1,4 +1,5 @@
-import Coba from "../molecules/Coba";
+import Card from "../molecules/Card";
+import Modal from "../molecules/Modal";
 
 const items = [
   {
@@ -11,7 +12,7 @@ const items = [
   {
     id: 2,
     image: "/logo.svg",
-    title: "css",
+    title: "CSS",
     level: "Pemula",
     description: "ajarin dong puh sepuuhh",
   },
@@ -32,13 +33,13 @@ const MySkills = () => {
         {/* Card */}
         <div className="grid grid-cols-5 gap-2">
           {items.map((item) => (
-            <Coba
-              className
+            <Card
+              className="w-44 border-x border-y border-tertiary rounded flex items-center px-3 py-3"
               key={item.id}
-              image={item.image}
-              title={item.title}
-              level={item.level}
-            />
+            >
+              <Card.Image image={item.image} />
+              <Card.Title level={item.level} title={item.title} />
+            </Card>
           ))}
         </div>
       </section>
