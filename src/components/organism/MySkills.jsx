@@ -1,5 +1,4 @@
 import Card from "../molecules/Card";
-import Modal from "../molecules/Modal";
 
 const items = [
   {
@@ -38,7 +37,8 @@ const MySkills = () => {
               key={item.id}
             >
               <Card.Image image={item.image} />
-              <Card.Title level={item.level} title={item.title} />
+              <Card.Title level={item.level} title={item.title} modalName={"modal-" + item.id} />
+              <Card.Modal description={item.description} modalName={"modal-" + item.id}/>
             </Card>
           ))}
         </div>
