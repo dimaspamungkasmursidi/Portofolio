@@ -8,7 +8,9 @@ const App = () => {
     <>
       <header
         className={`flex flex-col justify-between py-3 px-12 md:flex-row md:items-center transition duration-300 ease-in-out ${
-          menuOpen ? "bg-secondary text-white" : " bg-transparent"
+          menuOpen
+            ? "bg-secondary text-white fixed w-full z-50"
+            : "bg-transparent"
         }`}
       >
         <div className="mb-6 md:mb-0">
@@ -65,7 +67,7 @@ const App = () => {
           </ul>
         </nav>
         <button
-          className="md:hidden absolute right-10 top-7 text-4xl transition duration-500"
+          className="md:hidden absolute right-10 top-4 text-4xl transition duration-500"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <IoCloseOutline /> : <IoMenuOutline />}

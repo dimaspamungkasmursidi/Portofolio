@@ -4,12 +4,12 @@ import Right from "../molecules/introduction/Right";
 const Introduction = () => {
   return (
     <>
-      <section className="flex justify-between px-12 mt-2 mb-8">
+      <section className="flex flex-wrap justify-between px-12 mb-8">
         {/* Left */}
         <Left />
         {/* Center */}
-        <div>
-          <img src="/images/introduction.svg" alt="Intoduction" width="420" />
+        <div className="hidden mobile:block mobile:w-[300px] mobile:h-[300px] smm:w-[300px] smm:h-[300px] md:w-[500px] md:h-[500px]">
+          <img src="/images/introduction.svg" alt="Intoduction" className="" />
         </div>
         {/* Right */}
         <Right />

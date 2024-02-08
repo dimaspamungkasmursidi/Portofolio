@@ -5,8 +5,8 @@ import Button from "../../atoms/Button";
 const Left = () => {
   return (
     <>
-      <div className="w-[11.5rem] mt-12">
-        <h1 className="font-inter text-28 font-bold leading-8 mb-4">
+      <div className="w-[11.5rem] mb-10 md:mt-12">
+        <h1 className="font-inter text-36 font-bold leading-10 mb-4">
           Dimas Pamungkas Mursidi.
         </h1>
         <hr className="border-tertiary border-2 rounded w-20" />
