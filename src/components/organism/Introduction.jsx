@@ -4,7 +4,7 @@ import Right from "../molecules/introduction/Right";
 const Introduction = () => {
   return (
     <>
-      <section className="flex flex-wrap justify-between px-12 mb-8">
+      <section className="flex flex-wrap justify-between px-6 smm:px-14 mb-8">
         {/* Left */}
         <Left />
         {/* Center */}

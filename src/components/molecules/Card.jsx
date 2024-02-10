@@ -4,7 +4,7 @@ const Card = (props) => {
   const { children } = props;
   return (
     <>
-      <div className="px-1 py-3 border-x border-y border-white rounded flex items-center mobile:w-44 mobile:px-2 shadow-[4px_4px_4px_rgba(0,0,0,0.38)]">
+      <div className="px-2 py-3 border-x border-y border-white rounded flex items-center xxs:justify-between mobile:w-44 mobile:px-2 shadow-[4px_4px_4px_rgba(0,0,0,0.38)]">
         {children}
       </div>
     </>
@@ -26,16 +26,18 @@ const Title = (props) => {
   const { title, level, modalName } = props;
   return (
     <>
-      <div className="w-[3.7rem] xsm:w-[5rem] mobile:w-[5.6rem] ml-2">
+      <div className="w-full max-w-xl ml-1 hidden xs:block">
         <p className="font-montserrat text-0.5 text-white font-semibold">
           {title}
         </p>
         <p className="font-montserrat text-0 text-gray-300">{level}</p>
       </div>
-      <IoIosArrowRoundForward
-        className="w-6 h-6 ml-2 text-white cursor-pointer border-y border-x border-white rounded-full animate-pulse"
-        onClick={() => document.getElementById(modalName).showModal()}
-      />
+      <div className="w-6 h-6">
+        <IoIosArrowRoundForward
+          className="w-6 h-6 text-white cursor-pointer border-y border-x border-white rounded-full animate-pulse hover:scale-125 transition duration-300 ease-in-out"
+          onClick={() => document.getElementById(modalName).showModal()}
+        />
+      </div>
     </>
   );
 };

@@ -107,7 +107,7 @@ const items = [
 const MySkills = () => {
   return (
     <>
-      <section className="w-full bg-secondary p-10 px-12 mt-2">
+      <section className="w-full bg-secondary px-6 smm:px-14 py-14">
         {/* Title */}
         <div className="w-full">
           <h1 className="font-inter text-primary text-28 font-bold mb-1">
@@ -118,7 +118,7 @@ const MySkills = () => {
 
         {/* Card */}
         <div className="mobile:flex items-center justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-6">
+          <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 py-6">
             {items.map((item) => (
               <Card key={item.id}>
                 <Card.Image image={item.image} />

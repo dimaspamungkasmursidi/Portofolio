@@ -51,8 +51,8 @@ export default {
         tablet: "960px",
         lg: "1120px",
         xl: "1200px",
-        "2xl": "1440px",
-        "3xl": "1536px",
+        "xxl": "1300px",
+        "3xl": "1440px",
       },
       animation: {
         "spin-slower": "spin 2s linear infinite",

@@ -2,14 +2,14 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const CardBootcamp = ({ image, title, desc }) => {
   return (
-    <div className="flex items-center justify-between min-w-40 border-black border-2 rounded-md p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
-      <img src={image} alt="Education" className="w-14 h-14" />
-      <div>
+    <div className="flex flex-col xs:flex-row items-center justify-between gap-2 w-full max-w-xl border-black border-2 rounded-md p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+      <img src={image} alt="Education" className="max-w-14 max-h-14" />
+      <div className="hidden w-full max-w-96 ml-2 2md:block">
         <p className="font-montserrat text-3 font-semibold">{title}</p>
         <p className="font-montserrat text-2">{desc}</p>
       </div>
       <div className="w-10">
-        <IoIosArrowRoundForward className="w-10 h-10 cursor-pointer border-y border-x border-black rounded-full animate-pulse" />
+        <IoIosArrowRoundForward className="w-10 h-10 cursor-pointer border-y border-x border-black rounded-full animate-pulse hover:scale-125 transition duration-300 ease-in-out" />
       </div>
     </div>
   );
@@ -18,9 +18,13 @@ const CardBootcamp = ({ image, title, desc }) => {
 const cardItems = [
   {
     image: "/images/infinite.png",
+    title: "Infinite Learning",
+    desc: "Web Development",
   },
   {
     image: "/images/hacktiv.png",
+    title: "Hacktiv8",
+    desc: "Web Developer",
   },
 ];
 

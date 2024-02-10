@@ -11,7 +11,7 @@ const Left = () => {
         </h1>
         <hr className="border-tertiary border-2 rounded w-20" />
         <div className="flex gap-1 mt-2 text-xl">
-          <ul className="flex gap-1">
+          <ul className="flex gap-1 mb-6">
             <li>
               <a href="">
                 <IoLogoInstagram />
