@@ -47,7 +47,7 @@ const Message = () => {
               <input
                 type="text"
                 className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5"
-                placeholder="Ur Name"
+                placeholder="Ur Name..."
               />
             </div>
             <div className="flex flex-col smm:w-full smm:max-w-2xl">

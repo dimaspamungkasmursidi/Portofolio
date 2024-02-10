@@ -4,6 +4,7 @@ import Introduction from "../components/organism/Introduction";
 import MySkills from "../components/organism/MySkills";
 import Portofolio from "../components/organism/Portofolio";
 import Contact from "../components/organism/Contact";
+import Footer from "../components/organism/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Education />
       <Portofolio />
       <Contact />
+      <Footer />
     </>
   );
 };
