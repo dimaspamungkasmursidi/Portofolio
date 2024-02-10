@@ -32,7 +32,7 @@ const CardList = () => {
   return (
     <div className="flex justify-between gap-2">
       {cardItems.map((item, index) => (
-        <CardBootcamp key={index} {...item} className="" />
+        <CardBootcamp key={index} {...item} />
       ))}
     </div>
   );

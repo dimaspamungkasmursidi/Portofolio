@@ -3,6 +3,7 @@ import Header from "../components/organism/Header";
 import Introduction from "../components/organism/Introduction";
 import MySkills from "../components/organism/MySkills";
 import Portofolio from "../components/organism/Portofolio";
+import Contact from "../components/organism/Contact";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <MySkills />
       <Education />
       <Portofolio />
+      <Contact />
     </>
   );
 };

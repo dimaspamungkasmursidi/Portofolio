@@ -1,7 +1,7 @@
 const BigCard = () => {
   return (
     <>
-      <div className="max-w-80 rounded-lg bg-secondary text-primary">
+      <div className="w-80 rounded-lg bg-secondary text-primary shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
         <div className="p-4">
           <img
             src="https://as2.ftcdn.net/v2/jpg/03/15/18/09/1000_F_315180932_rhiXFrJN27zXCCdrgx8V5GWbLd9zTHHA.jpg"
@@ -13,7 +13,7 @@ const BigCard = () => {
           <h1 className="font-montserrat text-24 font-bold pb-2">
             Portofolio Web
           </h1>
-          <div className="flex mb-4">
+          <div className="flex pb-4">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
               alt="Figma"
