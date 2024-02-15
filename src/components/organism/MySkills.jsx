@@ -114,7 +114,7 @@ const items = [
 const MySkills = () => {
   return (
     <>
-      <section className="w-full bg-secondary px-6 smm:px-14 py-14">
+      <section id="myskills" className="w-full bg-secondary px-6 smm:px-14 py-14">
         {/* Title */}
         <div className="w-full">
           <h1 className="font-inter text-primary text-28 font-bold mb-1">

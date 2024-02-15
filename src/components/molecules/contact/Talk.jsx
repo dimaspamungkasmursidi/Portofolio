@@ -10,30 +10,30 @@ const Talk = () => {
           Let's Talk
         </h1>
         <p className="font-montserrat">Ask me anything or just say hi..</p>
-        <div className="flex gap-1 mt-2 text-xl">
+        <nav className="flex gap-1 mt-2 text-xl">
           <ul className="flex gap-1 mb-6">
             <li>
-              <a href="https://wa.me/+6281311111111">
+              <a href="https://wa.me/+6288297894942">
                 <IoLogoWhatsapp />
               </a>
             </li>
             <li>
-              <a href="mailto:">
+              <a href="mailto:dimaspamungkas.m19@gmail.com">
                 <MdOutlineMailOutline />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/dimasmursidi/">
+              <a href="https://www.linkedin.com/in/dimas-pamungkas-mursidi-7511b9262/">
                 <PiLinkedinLogo />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/dimasmursidi/">
+              <a href="https://www.instagram.com/dmspamungkass/">
                 <IoLogoInstagram />
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </>
   );

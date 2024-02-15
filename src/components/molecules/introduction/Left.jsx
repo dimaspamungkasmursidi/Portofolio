@@ -10,26 +10,28 @@ const Left = () => {
           Dimas Pamungkas Mursidi.
         </h1>
         <hr className="border-tertiary border-2 rounded w-20" />
-        <div className="flex gap-1 mt-2 text-xl">
+        <nav className="flex gap-1 mt-2 text-xl">
           <ul className="flex gap-1 mb-6">
             <li>
-              <a href="">
+              <a href="https://www.instagram.com/dmspamungkass/">
                 <IoLogoInstagram />
               </a>
             </li>
             <li>
-              <a href="">
-                <IoLogoGithub />
-              </a>
-            </li>
-            <li>
-              <a href="">
+              <a href="https://www.linkedin.com/in/dimas-pamungkas-mursidi-7511b9262/">
                 <PiLinkedinLogo />
               </a>
             </li>
+            <li>
+              <a href="https://github.com/dimaspamungkasmursidi">
+                <IoLogoGithub />
+              </a>
+            </li>
           </ul>
-        </div>
+        </nav>
+        <a href="#contact">
         <Button>Contact</Button>
+        </a>
         <div className="mt-12 bg-secondary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <p className="text-white text-1 font-montserrat px-4 py-3 leading-4">
             Let's design, code, and create remarkable digital experiences

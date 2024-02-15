@@ -26,7 +26,7 @@ const App = () => {
           <ul className="hidden text-2 font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">
               <a
-                href="#"
+                href="#introduction"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Introduction
@@ -34,7 +34,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#myskills"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 My Skills
@@ -42,7 +42,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#education"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Education
@@ -50,7 +50,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#portofolio"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Portofolio
@@ -58,7 +58,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#contact"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Contact
@@ -77,7 +77,7 @@ const App = () => {
           <ul className="font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">
               <a
-                href="#"
+                href="#introduction"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Introduction
@@ -85,7 +85,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#myskills"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 My Skills
@@ -93,7 +93,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#education"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Education
@@ -101,7 +101,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#portofolio"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Portofolio
@@ -109,7 +109,7 @@ const App = () => {
             </li>
             <li className="active py-3">
               <a
-                href="#"
+                href="#contact"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Contact

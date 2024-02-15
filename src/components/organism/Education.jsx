@@ -6,7 +6,7 @@ import { IoIosArrowRoundBack, IoIosArrowRoundUp } from "react-icons/io";
 const Education = () => {
   return (
     <>
-      <section className="smm:flex smm:items-center smm:justify-between px-6 smm:px-14 pt-10">
+      <section id="education" className="smm:flex smm:items-center smm:justify-between px-6 smm:px-14 pt-10">
         <div>
           <div className="smm:hidden">
             <h1 className="font-inter text-36 font-bold mb-1">Education</h1>

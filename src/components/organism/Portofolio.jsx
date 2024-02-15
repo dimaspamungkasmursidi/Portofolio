@@ -5,7 +5,7 @@ import SecCard from "../molecules/portofolio/SecCard";
 const Portofolio = () => {
   return (
     <>
-      <section className="px-6 smm:px-14 py-6">
+      <section id="portofolio" className="px-6 smm:px-14 py-6">
         <div className="py-4">
           <h1 className="font-inter text-36 font-bold mb-1">Portofolio</h1>
           <hr className="border-tertiary border-2 rounded w-20" />
