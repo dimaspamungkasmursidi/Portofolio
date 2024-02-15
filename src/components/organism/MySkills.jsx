@@ -1,5 +1,5 @@
-import Card from "../molecules/Card";
-import Skills from "../molecules/Skills";
+import Card from "../molecules/myskills/Card";
+import Skills from "../molecules/myskills/Skills";
 
 const items = [
   {
@@ -26,7 +26,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     title: "JavaScript",
     level: "Intermediate",
-    description: "JavaScript is the programming language of the Web",
+    description:
+      "I have the ability to use the JavaScript programming language to build front-end websites. I gained this experience through independent study programs at Infinite Learning and Hacktiv8 focusing on web development. Additionally, I enjoy participating in free JavaScript coding classes offered by various coding bootcamps such as RevoU, which lasted for 10 days, Dibimbing.id, Dicoding, and others. These experiences have provided me with knowledge and practical skills in JavaScript.",
   },
   {
     id: 4,
@@ -34,7 +35,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
     title: "React",
     level: "Intermediate",
-    description: "React is a JavaScript library for building user interfaces",
+    description:
+      "I have the ability to use ReactJS to build dynamic and interactive front-end websites. I am proficient in using props to Redux, although I am still learning to deepen my understanding of ReactJS. I have experience using ReactJS while studying at Infinite Learning and enjoy taking paid courses from experts such as Dea Afrizal and others.",
   },
   {
     id: 5,
@@ -42,14 +44,15 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
     title: "Next.js",
     level: "Beginner",
-    description: "Next.js is a React framework for server-side rendering",
+    description:
+      "In learning Next.js, I am relatively new to it. However, since Next.js is built on top of React.js, I don't see it as a major challenge. I am confident that I can grasp its concepts quickly and efficiently.",
   },
   {
     id: 6,
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
     title: "Node.js",
-    level: "Intermediate",
+    level: "Beginner",
     description:
       "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine",
   },
@@ -59,7 +62,7 @@ const items = [
     title: "Tailwind",
     level: "Intermediate",
     description:
-      "Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces",
+      "In Tailwind CSS, I have proficiency due to its foundation in pure CSS, often referred to as a utility-first CSS framework. Therefore, I am well-versed in utilizing Tailwind and its utility classes to efficiently style web applications.",
   },
   {
     id: 8,
@@ -67,7 +70,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
     title: "Bootstrap",
     level: "Advanced",
-    description: "Bootstrap is a free and open-source CSS framework",
+    description:
+      "Bootstrap was the first framework I encountered when learning advanced web development. Since Bootstrap originates from CSS, I have a strong understanding of it.",
   },
   {
     id: 9,
@@ -75,7 +79,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg",
     title: "Git",
     level: "Intermediate",
-    description: "Git is a distributed version control system",
+    description:
+      "As a frontend developer, GitHub is an essential tool in my workflow. It allows for version control, collaboration with team members, and seamless deployment of projects.",
   },
   {
     id: 10,
@@ -84,7 +89,7 @@ const items = [
     title: "GitHub",
     level: "Intermediate",
     description:
-      "GitHub is a web-based hosting service for version control and collaboration",
+      "As a frontend developer, it's a given that I use GitHub, hehe..",
   },
   {
     id: 11,
@@ -92,7 +97,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     title: "Figma",
     level: "Intermediate",
-    description: "Figma is a collaborative vector graphics editor",
+    description:
+      "I have experience using Figma during my studies at Infinite Learning, where I worked as a Fullstack Web Developer, including UI/UX Design, for 6 months. I also designed this Portfolio website using Figma.",
   },
   {
     id: 12,
@@ -100,7 +106,8 @@ const items = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
     title: "MySQL",
     level: "Beginner",
-    description: "MySQL is a relational database management system",
+    description:
+      "I understand the basics of MySQL from my college days, where we built websites using PHP on campus.",
   },
 ];
 
@@ -129,6 +136,7 @@ const MySkills = () => {
                 />
                 <Card.Modal
                   description={item.description}
+                  image={item.image}
                   modalName={"modal-" + item.id}
                 />
               </Card>

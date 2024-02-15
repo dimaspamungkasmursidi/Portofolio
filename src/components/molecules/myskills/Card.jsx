@@ -42,7 +42,7 @@ const Title = (props) => {
   );
 };
 
-const Modal = ({ description, modalName }) => {
+const Modal = ({ description, modalName, image }) => {
   return (
     <>
       {/* Modal Content */}
@@ -63,7 +63,8 @@ const Modal = ({ description, modalName }) => {
           <h3 className="font-montserrat font-bold text-lg mb-6">
             Hello there!
           </h3>
-          <p className="font-montserrat text-1">{description}</p>
+          <img src={image} alt="Tech Stack" className="w-24 mb-2" />
+          <p className="font-montserrat">{description}</p>
         </div>
       </dialog>
     </>
