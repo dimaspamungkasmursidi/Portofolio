@@ -12,30 +12,30 @@ const Message = () => {
             Let's Talk
           </h1>
           <p className="font-montserrat">Ask me anything or just say hi..</p>
-          <div className="flex gap-1 mt-2 text-xl">
-            <ul className="flex gap-1 mb-6">
-              <li>
-                <a href="https://wa.me/+6281311111111">
-                  <IoLogoWhatsapp />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:">
-                  <MdOutlineMailOutline />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/dimasmursidi/">
-                  <PiLinkedinLogo />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/dimasmursidi/">
-                  <IoLogoInstagram />
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav className="flex gap-1 mt-2 text-xl">
+          <ul className="flex gap-1 mb-6">
+            <li>
+              <a href="https://wa.me/+6288297894942">
+                <IoLogoWhatsapp />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:dimaspamungkas.m19@gmail.com">
+                <MdOutlineMailOutline />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/dimas-pamungkas-mursidi-7511b9262/">
+                <PiLinkedinLogo />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dmspamungkass/">
+                <IoLogoInstagram />
+              </a>
+            </li>
+          </ul>
+        </nav>
         </div>
         {/* Form */}
         <form action="" className="w-full flex flex-col gap-4 px-6 pb-4">
