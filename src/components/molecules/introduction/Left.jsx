@@ -10,7 +10,7 @@ const Left = () => {
           Dimas Pamungkas Mursidi.
         </h1>
         <hr className="border-tertiary border-2 rounded w-20" />
-        <nav className="flex gap-1 mt-2 text-xl">
+        <nav className="flex gap-1 mt-2 text-2xl">
           <ul className="flex gap-1 mb-6">
             <li>
               <a href="https://www.instagram.com/dmspamungkass/">
@@ -30,7 +30,7 @@ const Left = () => {
           </ul>
         </nav>
         <a href="#contact">
-        <Button>Contact</Button>
+          <Button>Contact</Button>
         </a>
         <div className="mt-12 bg-secondary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
           <p className="text-white text-1 font-montserrat px-4 py-3 leading-4">

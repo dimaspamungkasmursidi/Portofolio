@@ -10,7 +10,7 @@ const Talk = () => {
           Let's Talk
         </h1>
         <p className="font-montserrat">Ask me anything or just say hi..</p>
-        <nav className="flex gap-1 mt-2 text-xl">
+        <nav className="flex gap-1 mt-2 text-3xl">
           <ul className="flex gap-1 mb-6">
             <li>
               <a href="https://wa.me/+6288297894942">
