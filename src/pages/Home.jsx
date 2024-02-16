@@ -2,7 +2,7 @@ import Education from "../components/organism/Education";
 import Header from "../components/organism/Header";
 import Introduction from "../components/organism/Introduction";
 import MySkills from "../components/organism/MySkills";
-import Portofolio from "../components/organism/Portofolio";
+import Porto from "../components/organism/Porto";
 import Contact from "../components/organism/Contact";
 import Footer from "../components/organism/Footer";
 
@@ -13,7 +13,7 @@ const Home = () => {
       <Introduction />
       <MySkills />
       <Education />
-      <Portofolio />
+      <Porto />
       <Contact />
       <Footer />
     </>

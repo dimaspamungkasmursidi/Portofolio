@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,13 @@ const App = () => {
         <div className="mb-6 md:mb-0">
           <a href="">
             {menuOpen ? (
+              <Link to="/">
               <img src="/logosecondary.svg" alt="Logo" width="90" />
+              </Link>
             ) : (
+              <Link to="/">
               <img src="/logo.svg" alt="Logo" width="90" />
+              </Link>
             )}
           </a>
         </div>

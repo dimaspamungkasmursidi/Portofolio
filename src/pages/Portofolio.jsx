@@ -1,6 +1,6 @@
 import Header from "../components/organism/Header";
 
-const Certificates = () => {
+const Portofolio = () => {
   return (
     <>
       <Header />
@@ -20,4 +20,4 @@ const Certificates = () => {
   );
 };
 
-export default Certificates;
+export default Portofolio;

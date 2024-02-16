@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrorPage from "./pages/404.jsx";
-import Certificates from "./pages/Certificates.jsx";
 import Home from "./pages/Home.jsx";
+import Certificates from "./pages/Certificates.jsx";
+import Portofolio from "./pages/Portofolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/Certificates",
     element: <Certificates />,
+  },
+  {
+    path: "/Portofolio",
+    element: <Portofolio />,
   },
 ]);
 

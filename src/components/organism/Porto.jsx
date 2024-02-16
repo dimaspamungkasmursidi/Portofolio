@@ -1,8 +1,9 @@
 import Button from "../atoms/Button";
 import BigCard from "../molecules/portofolio/BigCard";
 import SecCard from "../molecules/portofolio/SecCard";
+import { Link } from "react-router-dom";
 
-const Portofolio = () => {
+const Porto = () => {
   return (
     <>
       <section id="portofolio" className="px-6 smm:px-14 py-6">
@@ -24,7 +25,9 @@ const Portofolio = () => {
                 diverse projects, each illustrating a dedication to crafting
                 engaging and dynamic web experiences.
               </p>
-              <Button>Explore</Button>
+              <Link to="/portofolio">
+                <Button>Explore</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -33,4 +36,4 @@ const Portofolio = () => {
   );
 };
 
-export default Portofolio;
+export default Porto;
