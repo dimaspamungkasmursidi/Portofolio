@@ -2,6 +2,7 @@ import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { PiLinkedinLogo } from "react-icons/pi";
 import Button from "../../atoms/Button";
+import { Link } from "react-router-dom";
 
 const Message = () => {
   return (
@@ -16,9 +17,12 @@ const Message = () => {
           <nav className="flex gap-1 mt-2 text-2xl">
             <ul className="flex gap-1 mb-6">
               <li>
-                <a href="https://wa.me/+6288297894942">
+                <Link to="/CommingSoon">
                   <IoLogoWhatsapp />
-                </a>
+                </Link>
+                {/* <a href="https://wa.me/+6288297894942">
+                  <IoLogoWhatsapp />
+                </a> */}
               </li>
               <li>
                 <a href="mailto:dimaspamungkas.m19@gmail.com">

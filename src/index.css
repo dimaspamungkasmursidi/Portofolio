@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color: black;
-  background-color: #dcddff;
+* {
+  @apply leading-normal;
+}
+#root {
+  @apply bg-primary text-black min-h-screen overflow-x-hidden relative;
+}
+.categories-filter {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.categories-filter::-webkit-scrollbar {
+  display: none;
 }

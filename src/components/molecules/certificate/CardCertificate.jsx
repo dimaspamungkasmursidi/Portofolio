@@ -1,7 +1,7 @@
 const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
   return (
     <>
-      <div className="relative max-w-60 max-h-60 overflow-hidden rounded-md shadow-lg">
+      <div className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg">
         <div onClick={() => document.getElementById(modalCertif).showModal()}>
           <img
             src={image}

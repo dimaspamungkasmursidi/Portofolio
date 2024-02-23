@@ -6,6 +6,7 @@ import ErrorPage from "./pages/404.jsx";
 import Home from "./pages/Home.jsx";
 import Certificates from "./pages/Certificates.jsx";
 import Portofolio from "./pages/Portofolio.jsx";
+import CommingSoon from "./pages/CommingSoon.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/Portofolio",
     element: <Portofolio />,
+  },
+  {
+    path: "/CommingSoon",
+    element: <CommingSoon />,
   },
 ]);
 
