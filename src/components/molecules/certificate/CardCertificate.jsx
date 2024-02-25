@@ -80,9 +80,9 @@ const Certificate = [
     imageFull: "/images/certif-dicoding.svg",
   },
   {
-    image: "/images/certif-dicoding.svg",
-    title: "Dicoding Interm",
-    imageFull: "/images/certif-dicoding.svg",
+    image: "/images/certif-dicoding2.svg",
+    title: "Dicoding FE",
+    imageFull: "/images/certif-dicoding2.svg",
   },
   {
     image: "/images/certif-dibimbing.svg",
