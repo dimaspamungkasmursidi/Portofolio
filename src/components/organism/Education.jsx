@@ -16,7 +16,11 @@ const Education = () => {
             <h1 className="font-inter text-36 font-bold mb-1">Education</h1>
             <hr className="border-tertiary border-2 rounded w-20" />
           </div>
-          <img src="/images/edu.svg" alt="Education" width="320" />
+          <img
+            src="https://certificates-three.vercel.app/images/edu.svg"
+            alt="Education"
+            width="320"
+          />
         </div>
         <div className="w-full max-w-3xl smm:ml-4">
           <div className="hidden smm:block">

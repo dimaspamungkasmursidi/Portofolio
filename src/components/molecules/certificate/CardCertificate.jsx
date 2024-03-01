@@ -40,89 +40,100 @@ const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
 
 const Certificate = [
   {
-    image: "/images/cover-il.svg",
+    image: "https://certificates-three.vercel.app/images/cover-il.svg",
     title: "IL Fullstack Web",
-    imageFull: "/images/certif-il.svg",
+    imageFull: "https://certificates-three.vercel.app/images/certif-il.svg",
   },
   {
-    image: "/images/cover-hacktiv.svg",
+    image: "https://certificates-three.vercel.app/images/cover-hacktiv.svg",
     title: "Hacktiv8 FE",
-    imageFull: "/images/certif-hacktiv.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-hacktiv.svg",
   },
   {
-    image: "/images/certif-devfest.svg",
+    image: "https://certificates-three.vercel.app/images/certif-devfest.svg",
     title: "Devfest Speaker",
-    imageFull: "/images/certif-devfest.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-devfest.svg",
   },
   {
-    image: "/images/certif-hacktivalgo.svg",
+    image:
+      "https://certificates-three.vercel.app/images/certif-hacktivalgo.svg",
     title: "Hacktiv8 Algo",
-    imageFull: "/images/certif-hacktivalgo.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-hacktivalgo.svg",
   },
   {
-    image: "/images/certif-hacktivdom.svg",
+    image: "https://certificates-three.vercel.app/images/certif-hacktivdom.svg",
     title: "Hacktiv8 DOM",
-    imageFull: "/images/certif-hacktivdom.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-hacktivdom.svg",
   },
   {
-    image: "/images/certif-hacktivasync.svg",
+    image:
+      "https://certificates-three.vercel.app/images/certif-hacktivasync.svg",
     title: "Hacktiv8 Async",
-    imageFull: "/images/certif-hacktivasync.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-hacktivasync.svg",
   },
   {
-    image: "/images/certif-hacktivmaterial.svg",
+    image:
+      "https://certificates-three.vercel.app/images/certif-hacktivmaterial.svg",
     title: "Hacktiv8 Mater",
-    imageFull: "/images/certif-hacktivmaterial.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-hacktivmaterial.svg",
   },
   {
-    image: "/images/certif-dicoding.svg",
+    image: "https://certificates-three.vercel.app/images/certif-dicoding.svg",
     title: "Dicoding Basic",
-    imageFull: "/images/certif-dicoding.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-dicoding.svg",
   },
   {
-    image: "/images/certif-dicoding2.svg",
+    image: "https://certificates-three.vercel.app/images/certif-dicoding2.svg",
     title: "Dicoding FE",
-    imageFull: "/images/certif-dicoding2.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-dicoding2.svg",
   },
   {
-    image: "/images/certif-dibimbing.svg",
+    image: "https://certificates-three.vercel.app/images/certif-dibimbing.svg",
     title: "Dibimbing FE",
-    imageFull: "/images/certif-dibimbing.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-dibimbing.svg",
   },
   {
-    image: "/images/cover-edspert.svg",
+    image: "https://certificates-three.vercel.app/images/cover-edspert.svg",
     title: "Edspert ReactJS",
-    imageFull: "/images/certif-edspert.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-edspert.svg",
   },
   {
-    image: "/images/cover-praktikum.svg",
+    image: "https://certificates-three.vercel.app/images/cover-praktikum.svg",
     title: "Practical",
-    imageFull: "/images/certif-praktikum.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/cover-praktikum.svg",
   },
   {
-    image: "/images/certif-bem.svg",
+    image: "https://certificates-three.vercel.app/images/certif-bem.svg",
     title: "BEM Univ",
-    imageFull: "/images/certif-bem.svg",
+    imageFull: "https://certificates-three.vercel.app/images/certif-bem.svg",
   },
   {
-    image: "/images/certif-bemlaravel.svg",
+    image: "https://certificates-three.vercel.app/images/certif-bemlaravel.svg",
     title: "BEM Laravel",
-    imageFull: "/images/certif-bemlaravel.svg",
+    imageFull:
+      "https://certificates-three.vercel.app/images/certif-bemlaravel.svg",
   },
   {
-    image: "/images/certif-alumni.svg",
+    image: "https://certificates-three.vercel.app/images/certif-alumni.svg",
     title: "Univ Backend",
-    imageFull: "/images/certif-alumni.svg",
+    imageFull: "https://certificates-three.vercel.app/images/certif-alumni.svg",
   },
   {
-    image: "/images/certif-digital.svg",
+    image: "https://certificates-three.vercel.app/images/certif-digital.svg",
     title: "Digital",
-    imageFull: "/images/certif-digital.svg",
+    imageFull: "https://certificates-three.vercel.app/images/certif-digital.svg",
   },
-  // {
-  //   image: "/images/certif-.svg",
-  //   title: "",
-  // },
 ];
 
 const Card = () => {
@@ -136,3 +147,88 @@ const Card = () => {
 };
 
 export default Card;
+
+// Mapping data original
+
+// const Certificate = [
+//   {
+//     image: "/images/cover-il.svg",
+//     title: "IL Fullstack Web",
+//     imageFull: "/images/certif-il.svg",
+//   },
+//   {
+//     image: "/images/cover-hacktiv.svg",
+//     title: "Hacktiv8 FE",
+//     imageFull: "/images/certif-hacktiv.svg",
+//   },
+//   {
+//     image: "/images/certif-devfest.svg",
+//     title: "Devfest Speaker",
+//     imageFull: "/images/certif-devfest.svg",
+//   },
+//   {
+//     image: "/images/certif-hacktivalgo.svg",
+//     title: "Hacktiv8 Algo",
+//     imageFull: "/images/certif-hacktivalgo.svg",
+//   },
+//   {
+//     image: "/images/certif-hacktivdom.svg",
+//     title: "Hacktiv8 DOM",
+//     imageFull: "/images/certif-hacktivdom.svg",
+//   },
+//   {
+//     image: "/images/certif-hacktivasync.svg",
+//     title: "Hacktiv8 Async",
+//     imageFull: "/images/certif-hacktivasync.svg",
+//   },
+//   {
+//     image: "/images/certif-hacktivmaterial.svg",
+//     title: "Hacktiv8 Mater",
+//     imageFull: "/images/certif-hacktivmaterial.svg",
+//   },
+//   {
+//     image: "/images/certif-dicoding.svg",
+//     title: "Dicoding Basic",
+//     imageFull: "/images/certif-dicoding.svg",
+//   },
+//   {
+//     image: "/images/certif-dicoding2.svg",
+//     title: "Dicoding FE",
+//     imageFull: "/images/certif-dicoding2.svg",
+//   },
+//   {
+//     image: "/images/certif-dibimbing.svg",
+//     title: "Dibimbing FE",
+//     imageFull: "/images/certif-dibimbing.svg",
+//   },
+//   {
+//     image: "/images/cover-edspert.svg",
+//     title: "Edspert ReactJS",
+//     imageFull: "/images/certif-edspert.svg",
+//   },
+//   {
+//     image: "/images/cover-praktikum.svg",
+//     title: "Practical",
+//     imageFull: "/images/certif-praktikum.svg",
+//   },
+//   {
+//     image: "/images/certif-bem.svg",
+//     title: "BEM Univ",
+//     imageFull: "/images/certif-bem.svg",
+//   },
+//   {
+//     image: "/images/certif-bemlaravel.svg",
+//     title: "BEM Laravel",
+//     imageFull: "/images/certif-bemlaravel.svg",
+//   },
+//   {
+//     image: "/images/certif-alumni.svg",
+//     title: "Univ Backend",
+//     imageFull: "/images/certif-alumni.svg",
+//   },
+//   {
+//     image: "/images/certif-digital.svg",
+//     title: "Digital",
+//     imageFull: "/images/certif-digital.svg",
+//   },
+// ];

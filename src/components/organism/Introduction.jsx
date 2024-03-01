@@ -9,7 +9,7 @@ const Introduction = () => {
         <Left />
         {/* Center */}
         <div className="hidden mobile:block mobile:w-[300px] mobile:h-[300px] smm:w-[300px] smm:h-[300px] md:w-[500px] md:h-[500px]">
-          <img src="/images/introduction.svg" alt="Intoduction" className="" />
+          <img src="https://certificates-three.vercel.app/images/introduction.svg" alt="Intoduction" className="" />
         </div>
         {/* Right */}
         <Right />
