@@ -18,11 +18,11 @@ const App = () => {
           <a href="">
             {menuOpen ? (
               <Link to="/">
-              <img src="/logosecondary.svg" alt="Logo" width="90" />
+                <img src="/logosecondary.svg" alt="Logo" width="90" />
               </Link>
             ) : (
               <Link to="/">
-              <img src="/logo.svg" alt="Logo" width="90" />
+                <img src="/logo.svg" alt="Logo" width="90" />
               </Link>
             )}
           </a>
@@ -72,7 +72,7 @@ const App = () => {
           </ul>
         </nav>
         <button
-          className="md:hidden absolute right-4 top-4 text-4xl transition duration-500"
+          className="md:hidden absolute right-4 top-3 text-4xl transition duration-500"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <IoCloseOutline /> : <IoMenuOutline />}

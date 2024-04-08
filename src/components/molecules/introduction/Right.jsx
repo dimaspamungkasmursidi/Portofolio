@@ -24,14 +24,14 @@ const Right = () => {
               design interfaces that captivate users and enhance their online
               journey.
             </p>
-            <p className=" mt-2">
+            {/* <p className=" mt-2">
               Through HTML, I shape the foundation of each web page, ensuring
               accessibility and semantic structure. <br />
               CSS then adds the visual appeal, painting a vibrant canvas that
               invites exploration. <br />
               With JavaScript, I breathe life into static elements, infusing
               interactivity and responsiveness into every interaction.
-            </p>
+            </p> */}
           </div>
         </article>
       </div>
