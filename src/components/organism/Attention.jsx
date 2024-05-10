@@ -21,6 +21,9 @@ const Attention = () => {
         <p className="font-montserrat text-4 text-center">
           This website is unfinished, still under development...
         </p>
+        <p className="font-montserrat text-4 text-center">
+        Please wait a moment, it will go to the main page...
+        </p>
         <br />
         <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-black"></div>
       </div>
