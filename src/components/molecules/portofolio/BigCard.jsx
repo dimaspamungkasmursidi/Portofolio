@@ -4,9 +4,9 @@ const BigCard = () => {
       <div className="w-80 rounded-lg bg-secondary text-primary shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
         <div className="p-4">
           <img
-            src="https://as2.ftcdn.net/v2/jpg/03/15/18/09/1000_F_315180932_rhiXFrJN27zXCCdrgx8V5GWbLd9zTHHA.jpg"
+            src="/images/porto1.png"
             alt="Project"
-            className="rounded-lg"
+            className="rounded-lg object-cover h-72 w-80"
           />
         </div>
         <div className="px-4">

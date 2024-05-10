@@ -5,10 +5,12 @@ import MySkills from "../components/organism/MySkills";
 import Porto from "../components/organism/Porto";
 import Contact from "../components/organism/Contact";
 import Footer from "../components/organism/Footer";
+import Attention from "../components/organism/Attention";
 
 const Home = () => {
   return (
     <>
+      <Attention />
       <Header />
       <Introduction />
       <MySkills />

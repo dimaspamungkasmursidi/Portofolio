@@ -13,7 +13,7 @@ const SecCard = ({ image, title }) => {
         </div>
         <div className="absolute bottom-0 z-20 m-0 pb-2 smm:pb-4 ps-2 smm:ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
           <div className="bg-slate-900 px-4 pb-1 rounded bg-opacity-20 backdrop-blur-[2px]">
-            <h1 className="font-Montserrat text-1xl smm:text2 font-bold bg-gradient-to-r from-secondary to-black bg-clip-text text-transparent">
+            <h1 className="font-Montserrat text-1xl smm:text2 font-bold bg-gradient-to-r from-secondary to-white bg-clip-text text-transparent">
               {title}
             </h1>
           </div>
@@ -26,7 +26,7 @@ const SecCard = ({ image, title }) => {
 const Projects = [
   {
     image:
-      "https://as2.ftcdn.net/v2/jpg/03/15/18/09/1000_F_315180932_rhiXFrJN27zXCCdrgx8V5GWbLd9zTHHA.jpg",
+      "/images/porto2.png",
     title: "Project 1",
   },
   {
