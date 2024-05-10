@@ -17,7 +17,7 @@ const Education = () => {
             <hr className="border-tertiary border-2 rounded w-20" />
           </div>
           <img
-            src="https://certificates-three.vercel.app/images/edu.svg"
+            src="/images/edu.svg"
             alt="Education"
             width="320"
           />

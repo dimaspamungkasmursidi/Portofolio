@@ -13,7 +13,7 @@ const Attention = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-primary flex flex-col items-center justify-center ${
+        className={`fixed z-50 top-0 left-0 w-full h-full bg-primary flex flex-col items-center justify-center ${
           loading ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >

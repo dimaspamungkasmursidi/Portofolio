@@ -41,7 +41,7 @@ const CardUniv = () => {
             Hello there!
           </h3>
           <img
-            src="https://certificates-three.vercel.app/images/ubhara.png"
+            src="/images/ubhara.png"
             alt="Tech Stack"
             className="w-24 mb-2"
           />
