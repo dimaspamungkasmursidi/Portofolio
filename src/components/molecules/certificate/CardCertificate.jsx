@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
   return (
     <>
@@ -43,277 +45,182 @@ const Certificate = [
     image: "/images/cover-il.svg",
     title: "IL Fullstack Web",
     imageFull: "/images/certif-il.svg",
+    category: "Bootcamp & SI",
   },
   {
     image: "/images/cover-hacktiv.svg",
     title: "Hacktiv8 FE",
     imageFull: "/images/certif-hacktiv.svg",
+    category: "Bootcamp & SI",
   },
   {
     image: "/images/certif-devfest.svg",
     title: "Devfest Speaker",
     imageFull: "/images/certif-devfest.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-hacktivalgo.svg",
     title: "Hacktiv8 Algo",
     imageFull: "/images/certif-hacktivalgo.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-hacktivdom.svg",
     title: "Hacktiv8 DOM",
     imageFull: "/images/certif-hacktivdom.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-hacktivasync.svg",
     title: "Hacktiv8 Async",
     imageFull: "/images/certif-hacktivasync.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-hacktivmaterial.svg",
     title: "Hacktiv8 Mater",
     imageFull: "/images/certif-hacktivmaterial.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-dicoding.svg",
     title: "Dicoding Basic",
     imageFull: "/images/certif-dicoding.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-dicoding2.svg",
     title: "Dicoding FE",
     imageFull: "/images/certif-dicoding2.svg",
+    category: "Web Development",
   },
   {
     image: "/images/certif-dibimbing.svg",
     title: "Dibimbing FE",
     imageFull: "/images/certif-dibimbing.svg",
+    category: "Web Development",
   },
   {
     image: "/images/cover-edspert.svg",
     title: "Edspert ReactJS",
     imageFull: "/images/certif-edspert.svg",
+    category: "Web Development",
   },
   {
     image: "/images/cover-praktikum.svg",
     title: "Practical",
     imageFull: "/images/certif-praktikum.svg",
+    category: "University Certificate",
   },
   {
     image: "/images/certif-bem.svg",
     title: "BEM Univ",
     imageFull: "/images/certif-bem.svg",
+    category: "University Certificate",
   },
   {
     image: "/images/certif-bemlaravel.svg",
     title: "BEM Laravel",
     imageFull: "/images/certif-bemlaravel.svg",
+    category: "University Certificate",
   },
   {
     image: "/images/certif-alumni.svg",
     title: "Univ Backend",
     imageFull: "/images/certif-alumni.svg",
+    category: "University Certificate",
   },
   {
     image: "/images/certif-digital.svg",
     title: "Digital",
     imageFull: "/images/certif-digital.svg",
+    category: "Other",
   },
 ];
 
 const Card = () => {
+  const [filter, setFilter] = useState("All Certificates");
+
+  const handleFilter = (category) => {
+    setFilter(category);
+  };
+
+  const filteredCertificates =
+    filter === "All Certificates"
+      ? Certificate
+      : Certificate.filter((cert) => cert.category === filter);
+
   return (
-    <section className="grid grid-cols-2 smm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-5 gap-3 px-6 smm:px-14 py-2">
-      {Certificate.map((item, index) => (
-        <CardCertificate key={index} {...item} modalCertif={index} />
-      ))}
-    </section>
+    <>
+      <div className="flex tablet:items-center tablet:justify-between flex-col-reverse tablet:flex-row mb-6 gap-4">
+        <div className="flex items-center overflow-x-scroll overflow-y-hidden categories-filter px-6 smm:px-14">
+          {/* Filter */}
+            <button
+              onClick={() => handleFilter("All Certificates")}
+              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
+            >
+              All Certificates
+            </button>
+            <button
+              onClick={() => handleFilter("Bootcamp & SI")}
+              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
+            >
+              Bootcamp & SI
+            </button>
+            <button
+              onClick={() => handleFilter("Web Development")}
+              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
+            >
+              Web Development
+            </button>
+            <button
+              onClick={() => handleFilter("University Certificate")}
+              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
+            >
+              University Certificate
+            </button>
+            <button
+              onClick={() => handleFilter("Other")}
+              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
+            >
+              Other
+            </button>
+          </div>
+          {/* Search Bar */}
+          <div className="flex items-center space-x-2.5 px-6 smm:px-14">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search"
+                className="w-full pl-9 pr-20 py-2 rounded-full bg-white focus:outline-none focus:border-transparent"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="lucide lucide-search stroke-gray-400 absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      <section className="grid grid-cols-2 smm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-5 gap-3 px-6 smm:px-14 py-2">
+        {filteredCertificates.map((item, index) => (
+          <CardCertificate key={index} {...item} modalCertif={index} />
+        ))}
+      </section>
+    </>
   );
 };
 
 export default Card;
-
-// Mapping data original
-
-// const Certificate = [
-//   {
-//     image: "/images/cover-il.svg",
-//     title: "IL Fullstack Web",
-//     imageFull: "/images/certif-il.svg",
-//   },
-//   {
-//     image: "/images/cover-hacktiv.svg",
-//     title: "Hacktiv8 FE",
-//     imageFull: "/images/certif-hacktiv.svg",
-//   },
-//   {
-//     image: "/images/certif-devfest.svg",
-//     title: "Devfest Speaker",
-//     imageFull: "/images/certif-devfest.svg",
-//   },
-//   {
-//     image: "/images/certif-hacktivalgo.svg",
-//     title: "Hacktiv8 Algo",
-//     imageFull: "/images/certif-hacktivalgo.svg",
-//   },
-//   {
-//     image: "/images/certif-hacktivdom.svg",
-//     title: "Hacktiv8 DOM",
-//     imageFull: "/images/certif-hacktivdom.svg",
-//   },
-//   {
-//     image: "/images/certif-hacktivasync.svg",
-//     title: "Hacktiv8 Async",
-//     imageFull: "/images/certif-hacktivasync.svg",
-//   },
-//   {
-//     image: "/images/certif-hacktivmaterial.svg",
-//     title: "Hacktiv8 Mater",
-//     imageFull: "/images/certif-hacktivmaterial.svg",
-//   },
-//   {
-//     image: "/images/certif-dicoding.svg",
-//     title: "Dicoding Basic",
-//     imageFull: "/images/certif-dicoding.svg",
-//   },
-//   {
-//     image: "/images/certif-dicoding2.svg",
-//     title: "Dicoding FE",
-//     imageFull: "/images/certif-dicoding2.svg",
-//   },
-//   {
-//     image: "/images/certif-dibimbing.svg",
-//     title: "Dibimbing FE",
-//     imageFull: "/images/certif-dibimbing.svg",
-//   },
-//   {
-//     image: "/images/cover-edspert.svg",
-//     title: "Edspert ReactJS",
-//     imageFull: "/images/certif-edspert.svg",
-//   },
-//   {
-//     image: "/images/cover-praktikum.svg",
-//     title: "Practical",
-//     imageFull: "/images/certif-praktikum.svg",
-//   },
-//   {
-//     image: "/images/certif-bem.svg",
-//     title: "BEM Univ",
-//     imageFull: "/images/certif-bem.svg",
-//   },
-//   {
-//     image: "/images/certif-bemlaravel.svg",
-//     title: "BEM Laravel",
-//     imageFull: "/images/certif-bemlaravel.svg",
-//   },
-//   {
-//     image: "/images/certif-alumni.svg",
-//     title: "Univ Backend",
-//     imageFull: "/images/certif-alumni.svg",
-//   },
-//   {
-//     image: "/images/certif-digital.svg",
-//     title: "Digital",
-//     imageFull: "/images/certif-digital.svg",
-//   },
-// ];
-
-
-// Mapping data kedua
-// const Certificate = [
-//   {
-//     image: "https://certificates-three.vercel.app/images/cover-il.svg",
-//     title: "IL Fullstack Web",
-//     imageFull: "https://certificates-three.vercel.app/images/certif-il.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/cover-hacktiv.svg",
-//     title: "Hacktiv8 FE",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-hacktiv.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-devfest.svg",
-//     title: "Devfest Speaker",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-devfest.svg",
-//   },
-//   {
-//     image:
-//       "https://certificates-three.vercel.app/images/certif-hacktivalgo.svg",
-//     title: "Hacktiv8 Algo",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-hacktivalgo.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-hacktivdom.svg",
-//     title: "Hacktiv8 DOM",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-hacktivdom.svg",
-//   },
-//   {
-//     image:
-//       "https://certificates-three.vercel.app/images/certif-hacktivasync.svg",
-//     title: "Hacktiv8 Async",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-hacktivasync.svg",
-//   },
-//   {
-//     image:
-//       "https://certificates-three.vercel.app/images/certif-hacktivmaterial.svg",
-//     title: "Hacktiv8 Mater",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-hacktivmaterial.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-dicoding.svg",
-//     title: "Dicoding Basic",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-dicoding.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-dicoding2.svg",
-//     title: "Dicoding FE",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-dicoding2.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-dibimbing.svg",
-//     title: "Dibimbing FE",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-dibimbing.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/cover-edspert.svg",
-//     title: "Edspert ReactJS",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-edspert.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/cover-praktikum.svg",
-//     title: "Practical",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/cover-praktikum.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-bem.svg",
-//     title: "BEM Univ",
-//     imageFull: "https://certificates-three.vercel.app/images/certif-bem.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-bemlaravel.svg",
-//     title: "BEM Laravel",
-//     imageFull:
-//       "https://certificates-three.vercel.app/images/certif-bemlaravel.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-alumni.svg",
-//     title: "Univ Backend",
-//     imageFull: "https://certificates-three.vercel.app/images/certif-alumni.svg",
-//   },
-//   {
-//     image: "https://certificates-three.vercel.app/images/certif-digital.svg",
-//     title: "Digital",
-//     imageFull: "https://certificates-three.vercel.app/images/certif-digital.svg",
-//   },
-// ];
