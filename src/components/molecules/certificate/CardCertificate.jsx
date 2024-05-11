@@ -156,36 +156,36 @@ const Card = () => {
       <div className="flex tablet:items-center tablet:justify-between flex-col-reverse tablet:flex-row mb-6 gap-4">
         <div className="flex items-center overflow-x-scroll overflow-y-hidden categories-filter px-6 smm:px-14">
           {/* Filter */}
-            <button
-              onClick={() => handleFilter("All Certificates")}
-              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
-            >
-              All Certificates
-            </button>
-            <button
-              onClick={() => handleFilter("Bootcamp & SI")}
-              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
-            >
-              Bootcamp & SI
-            </button>
-            <button
-              onClick={() => handleFilter("Web Development")}
-              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
-            >
-              Web Development
-            </button>
-            <button
-              onClick={() => handleFilter("University Certificate")}
-              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
-            >
-              University Certificate
-            </button>
-            <button
-              onClick={() => handleFilter("Other")}
-              className="capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2"
-            >
-              Other
-            </button>
+          <button
+          onClick={() => handleFilter("All Certificates")}
+          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "All Certificates" ? "btn-active" : ""}`}
+        >
+          All Certificates
+        </button>
+        <button
+          onClick={() => handleFilter("Bootcamp & SI")}
+          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Bootcamp & SI" ? "btn-active" : ""}`}
+        >
+          Bootcamp & SI
+        </button>
+        <button
+          onClick={() => handleFilter("Web Development")}
+          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Web Development" ? "btn-active" : ""}`}
+        >
+          Web Development
+        </button>
+        <button
+          onClick={() => handleFilter("University Certificate")}
+          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "University Certificate" ? "btn-active" : ""}`}
+        >
+          University Certificate
+        </button>
+        <button
+          onClick={() => handleFilter("Other")}
+          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Other" ? "btn-active" : ""}`}
+        >
+          Other
+        </button>
           </div>
           {/* Search Bar */}
           <div className="flex items-center space-x-2.5 px-6 smm:px-14">

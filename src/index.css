@@ -15,3 +15,22 @@
 .categories-filter::-webkit-scrollbar {
   display: none;
 }
+
+
+/* BUTTON */
+.btn {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-active {
+  background-color: #000000;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #6268D1;
+  color: #fff;
+  transform: scale(1.05);
+}
