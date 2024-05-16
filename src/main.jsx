@@ -7,12 +7,18 @@ import Home from "./pages/Home.jsx";
 import Certificates from "./pages/Certificates.jsx";
 import Portofolio from "./pages/Portofolio.jsx";
 import CommingSoon from "./pages/CommingSoon.jsx";
+import Opening from "./pages/Opening.jsx";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Opening />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/Home",
+    element: <Home />,
   },
   {
     path: "/Certificates",

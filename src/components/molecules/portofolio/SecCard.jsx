@@ -53,7 +53,7 @@ const Card = () => {
       }
     };
 
-    handleResize(); // Panggil fungsi handleResize saat pertama kali rendering
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

@@ -61,7 +61,7 @@ const Message = () => {
                 id="full-name"
                 type="text"
                 name="Name"
-                className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5"
+                className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
                 placeholder="Ur Name..."
                 required=""
               />
@@ -79,7 +79,7 @@ const Message = () => {
                 id="email"
                 type="email"
                 name="Reply to"
-                className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5"
+                className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
                 placeholder="example@gmail.com"
                 required=""
               />
@@ -90,12 +90,12 @@ const Message = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-4">
             <label htmlFor="message" className="font-montserrat">
               Message
             </label>
             <textarea
-              className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5"
+              className="bg-primary border text-gray-900 text-sm rounded-lg outline-none w-full p-2.5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
               name="Message"
               id="message"
               cols="30"
