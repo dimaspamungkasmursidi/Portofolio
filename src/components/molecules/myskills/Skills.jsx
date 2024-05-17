@@ -1,9 +1,38 @@
+import { useEffect, useRef } from "react";
 import { IoCodeSlashOutline, IoCopyOutline } from "react-icons/io5";
 import { CiPen } from "react-icons/ci";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Skills = ({ icon: Icon, title, desc }) => {
+  const skillRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      skillRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: skillRef.current,
+          start: "top 80%", // When the top of the skill card is 80% from the top of the viewport
+          end: "bottom 20%", // When the bottom of the skill card is 20% from the top of the viewport
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div className="xsm:w-[14rem] xsm:h-[14rem] p-4 bg-primary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+    <div
+      ref={skillRef}
+      className="xsm:w-[14rem] xsm:h-[14rem] p-4 bg-primary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+    >
       <Icon className="w-12 h-12 text-secondary" />
       <h1 className="font-inter text-black font-semibold">{title}</h1>
       <p className="font-montserrat text-1 text-black">{desc}</p>

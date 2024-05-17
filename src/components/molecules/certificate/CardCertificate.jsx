@@ -1,9 +1,34 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      cardRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: "top 90%", // When the top of the card is 80% from the top of the viewport
+          end: "bottom 20%", // When the bottom of the card is 20% from the top of the viewport
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
-      <div className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg">
+      <div ref={cardRef} className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg">
         <div onClick={() => document.getElementById(modalCertif).showModal()}>
           <img
             src={image}

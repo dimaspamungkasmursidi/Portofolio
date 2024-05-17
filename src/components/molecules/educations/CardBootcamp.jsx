@@ -1,9 +1,35 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const CardBootcamp = ({ image, title, desc, descModal, modalName }) => {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      cardRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: "top 80%", // When the top of the card is 80% from the top of the viewport
+          end: "bottom 20%", // When the bottom of the card is 20% from the top of the viewport
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
-      <div className="flex flex-col xs:flex-row items-center justify-between gap-2 w-full max-w-xl border-black border-2 rounded-md p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+      <div ref={cardRef}   className="flex flex-col xs:flex-row items-center justify-between gap-2 w-full max-w-xl border-black border-2 rounded-md p-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
         <img src={image} alt="Education" className="max-w-14 max-h-14" />
         <div className="hidden w-full max-w-96 ml-2 2md:block">
           <p className="font-montserrat text-3 font-semibold">{title}</p>

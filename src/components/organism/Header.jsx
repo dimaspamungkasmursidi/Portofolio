@@ -1,9 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const logoRef = useRef(null);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      logoRef.current,
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+    );
+    gsap.fromTo(
+      navRef.current,
+      { opacity: 0, y: -20 },
+      { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power3.out" }
+    );
+  }, []);
 
   return (
     <>
@@ -15,19 +31,17 @@ const App = () => {
         }`}
       >
         <div className="mb-6 md:mb-0">
-          <a href="">
             {menuOpen ? (
               <Link to="/">
-                <img src="/logosecondary.svg" alt="Logo" width="90" />
+                <img ref={logoRef} src="/logosecondary.svg" alt="Logo" width="90" />
               </Link>
             ) : (
               <Link to="/">
-                <img src="/logo.svg" alt="Logo" width="90" />
+                <img ref={logoRef} src="/logo.svg" alt="Logo" width="90" />
               </Link>
             )}
-          </a>
         </div>
-        <nav>
+        <nav ref={navRef}>
           <ul className="hidden text-2 font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">
               <a

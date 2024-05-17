@@ -3,8 +3,123 @@ import CardBootcamp from "../molecules/educations/CardBootcamp";
 import Button from "../atoms/Button";
 import { IoIosArrowRoundBack, IoIosArrowRoundUp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Education = () => {
+  const titleRef = useRef(null);
+  const hrRef = useRef(null);
+  const titleRefMobile = useRef(null);
+  const hrRefMobile = useRef(null);
+  const imageRef = useRef(null);
+  const messageRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      hrRef.current,
+      { width: 0 },
+      {
+        width: "5rem",
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: hrRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+  
+  useEffect(() => {
+    gsap.fromTo(
+      titleRefMobile.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleRefMobile.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      hrRefMobile.current,
+      { width: 0 },
+      {
+        width: "5rem",
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: hrRefMobile.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      imageRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: imageRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    )
+    gsap.fromTo(
+      messageRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: messageRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       <section
@@ -13,19 +128,20 @@ const Education = () => {
       >
         <div>
           <div className="smm:hidden">
-            <h1 className="font-inter text-36 font-bold mb-1">Education</h1>
-            <hr className="border-tertiary border-2 rounded w-20" />
+            <h1 ref={titleRef} className="font-inter text-36 font-bold mb-1">Education</h1>
+            <hr ref={hrRef} className="border-tertiary border-2 rounded w-20" />
           </div>
           <img
+            ref={imageRef}
             src="/images/edu.svg"
             alt="Education"
-            width="320"
+            width="300"
           />
         </div>
         <div className="w-full max-w-3xl smm:ml-4">
           <div className="hidden smm:block">
-            <h1 className="font-inter text-36 font-bold mb-1">Education</h1>
-            <hr className="border-tertiary border-2 rounded w-20" />
+            <h1 ref={titleRefMobile} className="font-inter text-36 font-bold mb-1">Education</h1>
+            <hr ref={hrRefMobile} className="border-tertiary border-2 rounded w-20" />
           </div>
           <br />
           <CardUniv />
@@ -40,7 +156,7 @@ const Education = () => {
             <div className="smm:px-4">
               <IoIosArrowRoundBack className="w-10 h-10 hidden smm:block" />
             </div>
-            <p className="font-montserrat">
+            <p ref={messageRef} className="font-montserrat">
               Click the “Certificate” button to view all the certificates I
               possess.
             </p>
