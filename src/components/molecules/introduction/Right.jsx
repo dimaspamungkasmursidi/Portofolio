@@ -16,7 +16,7 @@ const Right = () => {
     )
     .fromTo(
       titleRef.current,
-      { opacity: 0, y: 20 },
+      { opacity: 0, y: 150 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out" },
       "-=0.8"
     )

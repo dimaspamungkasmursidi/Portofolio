@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,7 +13,7 @@ const Footer = () => {
     gsap.fromTo(
       footerRef.current,
       { opacity: 0,
-        y: 10,
+        y: -100,
       },
       {
         opacity: 1,
@@ -21,7 +22,7 @@ const Footer = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: footerRef.current,
-          start: "top 80%", // When the top of the card is 80% from the top of the viewport
+          start: "top 100%", // When the top of the card is 80% from the top of the viewport
           end: "bottom 20%", // When the bottom of the card is 20% from the top of the viewport
           toggleActions: "play none none none",
         },
@@ -33,8 +34,10 @@ const Footer = () => {
       <footer id="footer" className="px-6 py-6 smm:px-14 bg-secondary text-white mt-4">
         <div ref={footerRef} className="flex flex-wrap-reverse justify-between gap-6 items-center">
           <figure className="flex flex-col items-center justify-center sm:items-start">
+            <Link to="/Home">
             <img src="/logosecondary.svg" alt="Logo" width="90" />
-            <figcaption className="text-2 font-montserrat">
+            </Link>
+            <figcaption className="text-2 font-montserrat text-center">
               Copyright © Dimas Pamungkas Mursidi 2024.
             </figcaption>
           </figure>

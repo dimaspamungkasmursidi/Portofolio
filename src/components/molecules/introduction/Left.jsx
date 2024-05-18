@@ -16,7 +16,7 @@ const Left = () => {
 
     tl.fromTo(
       titleRef.current,
-      { opacity: 0, y: -50 },
+      { opacity: 0, y: -200 },
       { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
     )
     .fromTo(

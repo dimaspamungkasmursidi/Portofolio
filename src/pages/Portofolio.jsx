@@ -1,9 +1,9 @@
-import Header from "../components/organism/Header";
+import Nav from "../components/molecules/certificate/nav";
 
 const Portofolio = () => {
   return (
     <>
-      <Header />
+      <Nav />
       <marquee className="mt-20">
         <div className="flex flex-col items-center justify-center w-96 h-80">
           <img
