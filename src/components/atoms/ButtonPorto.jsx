@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Button = (props) => {
+const ButtonPorto = (props) => {
   const { children, variant = "text-secondary", border = "border-secondary", hover = "hover:bg-secondary hover:text-white" } = props;
   const buttonRef = useRef(null);
   const titleRef = useRef(null);
@@ -16,7 +16,7 @@ const Button = (props) => {
       { width: 0 },
       {
         duration: 1,
-        width: "8.5rem",
+        width: "5rem",
         ease: "power3.out",
         scrollTrigger: {
           trigger: buttonRef.current,
@@ -48,7 +48,7 @@ const Button = (props) => {
   return (
     <button
       ref={buttonRef}
-      className={`font-montserrat text-2 px-6 py-2 bg-transparent border-2 ${border} rounded-md ${variant} shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition duration-300 ease-in-out ${hover}`}
+      className={`font-montserrat text-2 px-4 py-1 bg-transparent border-2 ${border} rounded-md ${variant} shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] transition duration-300 ease-in-out ${hover}`}
     >
       <p ref={titleRef}>
       {children}
@@ -58,7 +58,7 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default ButtonPorto;
 
 
 

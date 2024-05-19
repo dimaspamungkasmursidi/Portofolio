@@ -49,7 +49,7 @@ const Opening = () => {
             Welcome to
           </h1>
           <h1 className="text-4xl font-inter font-extrabold uppercase md:text-5xl" id="title-2">
-            My portofolio
+            My Portofolio
           </h1>
           <h1 className="text-4xl font-inter font-extrabold uppercase md:text-5xl" id="title-3">
             Website
@@ -70,11 +70,11 @@ const Opening = () => {
         >
           {/* <h1 className="text-2xl font-montserrat font-bold text-white">
             Attention!
-          </h1> */}
-          <p className="font-montserrat hidden md:block">This website is unfinished, still under development...</p>
+          </h1>
           <p className="font-montserrat">This website is unfinished, still under development. Animation coming soon.</p>
-          <p className="font-montserrat">but you can still try it, let`s go...</p>
-          <br />
+          <p className="font-montserrat">but you can still try it, let`s go...</p> */}
+          <p className="font-montserrat px-4 xs2:px-6">This website is built using React JS, Tailwind CSS and GSAP for animation.</p>
+          <br /> 
           <h1 className="text-2xl font-montserrat font-bold text-white mb-4">Let`s get started</h1>
           <Link to="/Home">
             <Button>Click here!</Button>

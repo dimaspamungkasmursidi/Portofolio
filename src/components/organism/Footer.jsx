@@ -31,8 +31,8 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <footer id="footer" className="px-6 py-6 smm:px-14 bg-secondary text-white mt-4">
-        <div ref={footerRef} className="flex flex-wrap-reverse justify-between gap-6 items-center">
+      <footer className="px-6 py-6 smm:px-14 bg-secondary text-white mt-4">
+        <div ref={footerRef} className="flex flex-wrap-reverse items-center justify-center sm:justify-between gap-6">
           <figure className="flex flex-col items-center justify-center sm:items-start">
             <Link to="/Home">
             <img src="/logosecondary.svg" alt="Logo" width="90" />
@@ -41,13 +41,11 @@ const Footer = () => {
               Copyright © Dimas Pamungkas Mursidi 2024.
             </figcaption>
           </figure>
-          <div>
+          <div className="w-full sm:w-auto">
             <nav className="flex flex-wrap items-center justify-center gap-4 smm:gap-6">
-              <a href="#introduction" className="link link-hover">Introduction</a>
-              <a href="#myskills" className="link link-hover">My Skills</a>
-              <a href="#education" className="link link-hover">Education</a>
-              <a href="#portofolio" className="link link-hover">Portofolio</a>
-              <a href="#contact" className="link link-hover">Contact</a>
+              <Link to="/Home" className="active:text-black hover:text-black transition duration-300 ease-in-out">Home</Link>
+              <Link to="/Certificates" className="active:text-black hover:text-black transition duration-300 ease-in-out">Certificates</Link>
+              <Link to="/Portofolio" className="active:text-black hover:text-black transition duration-300 ease-in-out">My Project</Link>
             </nav>
             <hr className="border-tertiary border-y border-x rounded mt-4" />
           </div>

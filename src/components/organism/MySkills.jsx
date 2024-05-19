@@ -39,7 +39,7 @@ const items = [
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
     title: "React",
-    level: "Intermediate",
+    level: "Beginner",
     description:
       "I have the ability to use ReactJS to build dynamic and interactive front-end websites. I am proficient in using props to Redux, although I am still learning to deepen my understanding of ReactJS. I have experience using ReactJS while studying at Infinite Learning and enjoy taking paid courses from experts such as Dea Afrizal and others.",
   },
@@ -48,7 +48,7 @@ const items = [
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
     title: "Next.js",
-    level: "Beginner",
+    level: "Newbie",
     description:
       "In learning Next.js, I am relatively new to it. However, since Next.js is built on top of React.js, I don't see it as a major challenge. I am confident that I can grasp its concepts quickly and efficiently.",
   },
@@ -65,7 +65,7 @@ const items = [
     id: 7,
     image: "https://cdn.simpleicons.org/tailwindcss/06B6D4.svg",
     title: "Tailwind",
-    level: "Intermediate",
+    level: "Advanced",
     description:
       "In Tailwind CSS, I have proficiency due to its foundation in pure CSS, often referred to as a utility-first CSS framework. Therefore, I am well-versed in utilizing Tailwind and its utility classes to efficiently style web applications.",
   },
@@ -92,7 +92,7 @@ const items = [
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg",
     title: "GitHub",
-    level: "Intermediate",
+    level: "Advanced",
     description:
       "As a frontend developer, it's a given that I use GitHub, hehe..",
   },
@@ -158,7 +158,6 @@ const MySkills = () => {
   return (
     <>
       <section
-        id="myskills"
         className="w-full bg-secondary px-6 py-14 smm:px-14"
       >
         {/* Title */}

@@ -3,7 +3,7 @@ import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-const App = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const logoRef = useRef(null);
   const navRef = useRef(null);
@@ -32,11 +32,11 @@ const App = () => {
       >
         <div className="mb-6 md:mb-0">
             {menuOpen ? (
-              <Link to="/">
+              <Link to="/Home">
                 <img ref={logoRef} src="/logosecondary.svg" alt="Logo" width="90" />
               </Link>
             ) : (
-              <Link to="/">
+              <Link to="/Home">
                 <img ref={logoRef} src="/logo.svg" alt="Logo" width="90" />
               </Link>
             )}
@@ -44,44 +44,25 @@ const App = () => {
         <nav ref={navRef}>
           <ul className="hidden text-2 font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">
-              <a
-                href="#introduction"
+              <Link to="/Home"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                Introduction
-              </a>
+                Home
+              </Link>
             </li>
             <li className="active py-3">
-              <a
-                href="#myskills"
+              <Link to="/Certificates"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                My Skills
-              </a>
+                Certificates
+              </Link>
             </li>
             <li className="active py-3">
-              <a
-                href="#education"
+              <Link to="/Portofolio"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                Education
-              </a>
-            </li>
-            <li className="active py-3">
-              <a
-                href="#portofolio"
-                className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
-              >
-                Portofolio
-              </a>
-            </li>
-            <li className="active py-3">
-              <a
-                href="#contact"
-                className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
-              >
-                Contact
-              </a>
+                My Project
+              </Link>
             </li>
           </ul>
         </nav>
@@ -95,44 +76,25 @@ const App = () => {
         <nav className={`${menuOpen ? "block" : "hidden"} md:hidden`}>
           <ul className="font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">
-              <a
-                href="#introduction"
+              <Link to="/Home"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                Introduction
-              </a>
+                Home
+              </Link>
             </li>
             <li className="active py-3">
-              <a
-                href="#myskills"
+              <Link to="/Certificates"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                My Skills
-              </a>
+                Certificates
+              </Link>
             </li>
             <li className="active py-3">
-              <a
-                href="#education"
+              <Link to="/Portofolio"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
               >
-                Education
-              </a>
-            </li>
-            <li className="active py-3">
-              <a
-                href="#portofolio"
-                className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
-              >
-                Portofolio
-              </a>
-            </li>
-            <li className="active py-3">
-              <a
-                href="#contact"
-                className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
-              >
-                Contact
-              </a>
+                My Project
+              </Link>
             </li>
           </ul>
         </nav>
@@ -141,4 +103,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Header;

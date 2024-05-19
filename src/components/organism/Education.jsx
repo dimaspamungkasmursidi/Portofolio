@@ -123,7 +123,6 @@ const Education = () => {
   return (
     <>
       <section
-        id="education"
         className="smm:flex smm:items-center smm:justify-between px-6 smm:px-14 pt-10"
       >
         <div>

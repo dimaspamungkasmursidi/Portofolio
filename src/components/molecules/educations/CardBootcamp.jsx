@@ -71,14 +71,14 @@ const CardBootcamp = ({ image, title, desc, descModal, modalName }) => {
 
 const cardItems = [
   {
-    image: "/images/infinite.png",
+    image: "https://storage.googleapis.com/kampusmerdeka_kemdikbud_go_id/mitra/mitra_f6fccdce-1cdb-4977-adf2-b4b5c3c52cc8.png",
     title: "Infinite Learning",
     desc: "Web Development",
     descModal:
       "I have undertaken a 6-month Independent Study program at Infinite Learning, focusing on Web Development with a specialization in UI/UX Design. Throughout the program, I delved into various aspects of web development using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS) and honed my UI/UX design skills using Figma. The learning approach was project and problem-based, allowing for a comprehensive understanding of concepts. For more details and to explore the course modules, you can visit the following link: https://kampusmerdeka.kemdikbud.go.id/program/studi-independen/browse/863c3409-8b4e-4c96-9edd-71ee61e9fc41/0fd194d0-6751-11ee-aa55-9668c84beb67",
   },
   {
-    image: "/images/hacktiv.png",
+    image: "https://pbs.twimg.com/profile_images/1303645505465974785/BAedfmOT_400x400.jpg",
     title: "Hacktiv8",
     desc: "Web Developer",
     descModal:

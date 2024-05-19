@@ -15,7 +15,7 @@ const Introduction = () => {
 
   return (
     <>
-      <section id="introduction" className="flex flex-wrap justify-between px-6 smm:px-14 mb-8">
+      <section className="flex flex-wrap justify-between px-6 smm:px-14 mb-8">
         {/* Left */}
         <Left />
         {/* Center */}

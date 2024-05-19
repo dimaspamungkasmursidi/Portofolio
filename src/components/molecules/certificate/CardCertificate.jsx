@@ -28,7 +28,7 @@ const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
 
   return (
     <>
-      <div ref={cardRef} className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg">
+      <div ref={cardRef} className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg cursor-move">
         <div onClick={() => document.getElementById(modalCertif).showModal()}>
           <img
             src={image}
@@ -178,7 +178,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="flex tablet:items-center tablet:justify-between flex-col-reverse tablet:flex-row mb-6 gap-4">
+      <div className="flex tablet:items-center tablet:justify-between flex-col-reverse tablet:flex-row sm:mt-4 mb-6 gap-4">
         <div className="flex items-center overflow-x-scroll overflow-y-hidden categories-filter px-6 smm:px-14">
           {/* Filter */}
           <button

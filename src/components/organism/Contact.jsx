@@ -31,7 +31,6 @@ const Contact = () => {
   return (
     <section
       ref={contactRef}
-      id="contact"
       className="flex flex-col smm:flex-row items-center justify-center smm:gap-4 px-6 smm:px-14 py-10"
     >
       <Talk />

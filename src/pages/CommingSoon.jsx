@@ -17,7 +17,7 @@ const CommingSoon = () => {
         </div>
       </marquee>
       <div className="flex flex-col items-center justify-center animate-bounce">
-        <Link to="/">
+        <Link to="/Home">
           <IoHomeOutline className="w-16 h-16" />
         </Link>
         <p className="font-montserrat text-lg font-semibold">Go to Home</p>

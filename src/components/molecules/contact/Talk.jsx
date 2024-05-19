@@ -9,6 +9,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Talk = () => {
+  const email = 'dimaspamungkas.m19@gmail.com';
+  const subject = 'Subject Here';
+  const body = 'Body text here';
+  
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+  
   const talkRef = useRef(null);
   const titleRef = useRef(null);
   const descriptionRef = useRef(null);
@@ -88,7 +94,7 @@ const Talk = () => {
               </a> */}
             </li>
             <li>
-              <a href="mailto:dimaspamungkas.m19@gmail.com">
+              <a href={gmailUrl} target="_blank" rel="noopener noreferrer">
                 <MdOutlineMailOutline />
               </a>
             </li>

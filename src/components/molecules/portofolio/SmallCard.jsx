@@ -126,10 +126,10 @@ const SmallCard = () => {
         className="relative max-w-60 flex overflow-hidden rounded-lg shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
       >
         <div className="group relative m-0 flex max-h-60 rounded-lg sm:mx-auto sm:max-w-lg">
-          <div className="z-10 max-h-full max-w-full overflow-hidden rounded-lg opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:opacity-70">
+          <div className="">
             <img
               src="https://dinosource.vercel.app/assets/tirex-YyfsT7vk.png"
-              className="animate-fade-in block max-h-60 max-w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+              className="max-h-60 max-w-full"
               alt="Project"
             />
           </div>

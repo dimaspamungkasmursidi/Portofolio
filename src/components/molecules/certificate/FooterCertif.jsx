@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const FooterCertif = () => {
   return (
     <footer
@@ -5,7 +7,9 @@ const FooterCertif = () => {
     >
       <div className="flex flex-wrap-reverse justify-between gap-6 items-center">
         <figure className="flex flex-col items-center justify-center">
+          <Link to="/Home">
           <img src="/logosecondary.svg" alt="Logo" width="90" />
+          </Link>
           <figcaption className="text-2 font-montserrat">
             Copyright © Dimas Pamungkas Mursidi 2024.
           </figcaption>
