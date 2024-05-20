@@ -11,7 +11,7 @@ const CommingSoon = () => {
             alt="Image"
             className="animate-bounce w-40"
           />
-          <h1 className="font-inter text-5xl font-bold animate-bounce">
+          <h1 className="font-neue text-5xl font-bold animate-bounce">
             COMMING SOON!
           </h1>
         </div>

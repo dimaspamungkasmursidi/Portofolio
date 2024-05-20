@@ -30,6 +30,7 @@ const Contact = () => {
 
   return (
     <section
+      id="contact"
       ref={contactRef}
       className="flex flex-col smm:flex-row items-center justify-center smm:gap-4 px-6 smm:px-14 py-10"
     >

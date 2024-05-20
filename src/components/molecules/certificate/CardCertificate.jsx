@@ -28,7 +28,10 @@ const CardCertificate = ({ image, title, imageFull, modalCertif }) => {
 
   return (
     <>
-      <div ref={cardRef} className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg cursor-move">
+      <div
+        ref={cardRef}
+        className="relative max-w-60 max-h-60 mb-6 overflow-hidden rounded-md shadow-lg cursor-move"
+      >
         <div onClick={() => document.getElementById(modalCertif).showModal()}>
           <img
             src={image}
@@ -133,6 +136,18 @@ const Certificate = [
     category: "Web Development",
   },
   {
+    image: "/images/certif-uiux.svg",
+    title: "UI/UI with AI",
+    imageFull: "/images/certif-uiux.svg",
+    category: "Web Development",
+  },
+  {
+    image: "/images/certif-digitalmarketing.svg",
+    title: "Digital Marketing",
+    imageFull: "/images/certif-digitalmarketing.svg",
+    category: "Other",
+  },
+  {
     image: "/images/cover-praktikum.svg",
     title: "Practical",
     imageFull: "/images/certif-praktikum.svg",
@@ -182,62 +197,73 @@ const Card = () => {
         <div className="flex items-center overflow-x-scroll overflow-y-hidden categories-filter px-6 smm:px-14">
           {/* Filter */}
           <button
-          onClick={() => handleFilter("All Certificates")}
-          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "All Certificates" ? "btn-active" : ""}`}
-        >
-          All Certificates
-        </button>
-        <button
-          onClick={() => handleFilter("Bootcamp & SI")}
-          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Bootcamp & SI" ? "btn-active" : ""}`}
-        >
-          Bootcamp & SI
-        </button>
-        <button
-          onClick={() => handleFilter("Web Development")}
-          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Web Development" ? "btn-active" : ""}`}
-        >
-          Web Development
-        </button>
-        <button
-          onClick={() => handleFilter("University Certificate")}
-          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "University Certificate" ? "btn-active" : ""}`}
-        >
-          University Certificate
-        </button>
-        <button
-          onClick={() => handleFilter("Other")}
-          className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${filter === "Other" ? "btn-active" : ""}`}
-        >
-          Other
-        </button>
-          </div>
-          {/* Search Bar */}
-          <div className="flex items-center space-x-2.5 px-6 smm:px-14">
-            <div className="relative w-full">
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-full pl-9 pr-20 py-2 rounded-full bg-white focus:outline-none focus:border-transparent"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-search stroke-gray-400 absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </svg>
-            </div>
+            onClick={() => handleFilter("All Certificates")}
+            className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${
+              filter === "All Certificates" ? "btn-active" : ""
+            }`}
+          >
+            All Certificates
+          </button>
+          <button
+            onClick={() => handleFilter("Bootcamp & SI")}
+            className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${
+              filter === "Bootcamp & SI" ? "btn-active" : ""
+            }`}
+          >
+            Bootcamp & SI
+          </button>
+          <button
+            onClick={() => handleFilter("Web Development")}
+            className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${
+              filter === "Web Development" ? "btn-active" : ""
+            }`}
+          >
+            Web Development
+          </button>
+          <button
+            onClick={() => handleFilter("University Certificate")}
+            className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${
+              filter === "University Certificate" ? "btn-active" : ""
+            }`}
+          >
+            University Certificate
+          </button>
+          <button
+            onClick={() => handleFilter("Other")}
+            className={`btn btn-sm capitalize whitespace-nowrap bg-secondary text-left w-auto px-3 py-1.5 rounded-full text-white mr-2 ${
+              filter === "Other" ? "btn-active" : ""
+            }`}
+          >
+            Other
+          </button>
+        </div>
+        {/* Search Bar */}
+        <div className="flex items-center space-x-2.5 px-6 smm:px-14">
+          <div className="relative w-full">
+            <input
+              disabled
+              type="text"
+              placeholder="Search"
+              className="w-full pl-9 pr-20 py-2 rounded-full bg-white focus:outline-none focus:border-transparent"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-search stroke-gray-400 absolute top-1/2 left-3 transform -translate-y-1/2 pointer-events-none"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
           </div>
         </div>
+      </div>
 
       <section className="grid grid-cols-2 smm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-5 gap-3 px-6 smm:px-14 py-2">
         {filteredCertificates.map((item, index) => (

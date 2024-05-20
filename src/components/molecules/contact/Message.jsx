@@ -86,7 +86,7 @@ const Message = () => {
           ease: "power3.out",
           scrollTrigger: {
             trigger: input,
-            start: "top 80%",
+            start: "top 90%",
             end: "bottom 10%",
             toggleActions: "play none none none",
           },
@@ -100,7 +100,7 @@ const Message = () => {
   if (state.succeeded) {
     return (
       <div className="w-full h-40 max-w-2xl flex items-center justify-center p-6 bg-secondary text-primary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
-        <h1 className="font-inter text-center text-28 font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-black">
+        <h1 className="font-montserrat text-center text-28 font-semibold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-black">
           Thanks for the message!
         </h1>
       </div>
@@ -115,7 +115,7 @@ const Message = () => {
       >
         {/* Description */}
         <div className="w-full px-6 smm:hidden">
-          <h1 ref={titleRef} className="font-inter text-28 font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-secondary">
+          <h1 ref={titleRef} className="font-montserrat text-28 font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-secondary">
             Let's Talk
           </h1>
           <p ref={descriptionRef} className="font-montserrat">Ask me anything or just say hi..</p>

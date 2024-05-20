@@ -52,7 +52,7 @@ const CardBootcamp = ({ image, title, desc, descModal, modalName }) => {
           className="modal-box bg-primary rounded"
           onClick={(e) => e.stopPropagation()}
         >
-          <h3 className="font-inter text-3 font-semibold">{title}</h3>
+          <h3 className="font-neue text-3 font-semibold">{title}</h3>
           <br />
           <img src={image} alt="Tech Stack" className="w-24 mb-2" />
           <p className="font-montserrat text-2">{descModal}</p>
@@ -75,7 +75,7 @@ const cardItems = [
     title: "Infinite Learning",
     desc: "Web Development",
     descModal:
-      "I have undertaken a 6-month Independent Study program at Infinite Learning, focusing on Web Development with a specialization in UI/UX Design. Throughout the program, I delved into various aspects of web development using the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS) and honed my UI/UX design skills using Figma. The learning approach was project and problem-based, allowing for a comprehensive understanding of concepts. For more details and to explore the course modules, you can visit the following link: https://kampusmerdeka.kemdikbud.go.id/program/studi-independen/browse/863c3409-8b4e-4c96-9edd-71ee61e9fc41/0fd194d0-6751-11ee-aa55-9668c84beb67",
+      "I have undertaken a 6-month Independent Study program at Infinite Learning, focusing on Web Development with a specialization in UI/UX Design. Throughout the program, I delved into various aspects of web development using the MERN stack (MySQL, ExpressJS, ReactJS, NodeJS) and honed my UI/UX design skills using Figma. The learning approach was project and problem-based, allowing for a comprehensive understanding of concepts.",
   },
   {
     image: "https://pbs.twimg.com/profile_images/1303645505465974785/BAedfmOT_400x400.jpg",

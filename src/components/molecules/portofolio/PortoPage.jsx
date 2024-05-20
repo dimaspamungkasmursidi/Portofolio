@@ -82,7 +82,7 @@ const PortoPage = ({
             {/* DESC */}
             <div className="w-full flex flex-col justify-between gap-2 p-2 pl-4">
               <div className="sm:w-56 text-white">
-                <h1 className="font-inter font-bold text-2xl">{title}</h1>
+                <h1 className="font-neue font-bold text-2xl">{title}</h1>
                 <p className="font-montserrat text-2 line-clamp-2">{desc}</p>
               </div>
               <div className="flex items-center mb-2">
@@ -121,7 +121,7 @@ const PortoPage = ({
           className="modal-box bg-primary rounded"
           onClick={(e) => e.stopPropagation()}
         >
-          <h3 className="font-inter text-2xl font-bold">{title}</h3>
+          <h3 className="font-neue text-2xl font-bold">{title}</h3>
           <br />
           <img src={image} alt="Tech Stack" className="w-32 mb-2 sm:w-56" />
           <p className="font-montserrat text-2 text-justify indent-10 mb-2">

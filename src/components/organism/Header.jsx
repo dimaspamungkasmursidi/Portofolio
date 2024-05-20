@@ -41,8 +41,9 @@ const Header = () => {
               </Link>
             )}
         </div>
+{/* WEB */}
         <nav ref={navRef}>
-          <ul className="hidden text-2 font-montserrat font-medium md:flex md:gap-6">
+          <ul className="hidden text-2 font-montserrat font-semibold tracking-wide md:flex md:gap-6">
             <li className="active py-3">
               <Link to="/Home"
                 className="active:text-secondary hover:text-secondary transition duration-300 ease-in-out"
@@ -72,7 +73,7 @@ const Header = () => {
         >
           {menuOpen ? <IoCloseOutline /> : <IoMenuOutline />}
         </button>
-
+{/* Mobile */}
         <nav className={`${menuOpen ? "block" : "hidden"} md:hidden`}>
           <ul className="font-montserrat font-medium md:flex md:gap-6">
             <li className="active py-3">

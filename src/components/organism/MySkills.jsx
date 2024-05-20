@@ -162,7 +162,7 @@ const MySkills = () => {
       >
         {/* Title */}
         <div className="w-full">
-          <h1 ref={titleRef} className="font-inter text-primary text-28 font-bold mb-1">
+          <h1 ref={titleRef} className="font-neue tracking-wider text-primary text-28 font-bold">
             My Skills
           </h1>
           <hr ref={hrRef} className="border-tertiary border-2 rounded" />

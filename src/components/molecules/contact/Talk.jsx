@@ -79,10 +79,10 @@ const Talk = () => {
   return (
     <>
       <div ref={talkRef} className="hidden smm:block">
-        <h1 ref={titleRef} className="font-inter text-28 font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-secondary">
+        <h1 ref={titleRef} className="font-montserrat text-32 font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-secondary">
           Let's Talk
         </h1>
-        <p ref={descriptionRef} className="font-montserrat">Ask me anything or just say hi..</p>
+        <p ref={descriptionRef} className="font-montserrat mr-6">Ask me anything or just say hi..</p>
         <nav className="flex gap-1 mt-2 text-3xl">
           <ul className="flex gap-1 mb-6">
             <li>

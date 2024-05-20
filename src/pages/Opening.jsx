@@ -42,16 +42,16 @@ const Opening = () => {
     <div className="relative" ref={opening}>
       <div
         id="opening-slider"
-        className="h-screen p-10 bg-primary absolute font-inter z-10 w-full flex flex-col items-center justify-center gap-10"
+        className="h-screen p-10 bg-primary absolute font-neue tracking-widest z-10 w-full flex flex-col items-center justify-center gap-10"
       >
         <div className="flex flex-col items-center justify-center text-center text-black">
-          <h1 className="text-4xl font-inter font-extrabold uppercase md:text-5xl" id="title-1">
+          <h1 className="text-4xl font-neue tracking-widest font-extrabold uppercase md:text-5xl" id="title-1">
             Welcome to
           </h1>
-          <h1 className="text-4xl font-inter font-extrabold uppercase md:text-5xl" id="title-2">
+          <h1 className="text-4xl font-neue tracking-widest font-extrabold uppercase md:text-5xl" id="title-2">
             My Portofolio
           </h1>
-          <h1 className="text-4xl font-inter font-extrabold uppercase md:text-5xl" id="title-3">
+          <h1 className="text-4xl font-neue tracking-widest font-extrabold uppercase md:text-5xl" id="title-3">
             Website
           </h1>
         </div>
@@ -73,7 +73,7 @@ const Opening = () => {
           </h1>
           <p className="font-montserrat">This website is unfinished, still under development. Animation coming soon.</p>
           <p className="font-montserrat">but you can still try it, let`s go...</p> */}
-          <p className="font-montserrat px-4 xs2:px-6">This website is built using React JS, Tailwind CSS and GSAP for animation.</p>
+          <p className="font-montserrat px-4 xs2:px-6">This website is built using React JS, ailwind css and GSAP for animation.</p>
           <br /> 
           <h1 className="text-2xl font-montserrat font-bold text-white mb-4">Let`s get started</h1>
           <Link to="/Home">

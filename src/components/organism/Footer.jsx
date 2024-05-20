@@ -42,7 +42,7 @@ const Footer = () => {
             </figcaption>
           </figure>
           <div className="w-full sm:w-auto">
-            <nav className="flex flex-wrap items-center justify-center gap-4 smm:gap-6">
+            <nav className="flex flex-wrap items-center justify-center font-semibold gap-4 smm:gap-6">
               <Link to="/Home" className="active:text-black hover:text-black transition duration-300 ease-in-out">Home</Link>
               <Link to="/Certificates" className="active:text-black hover:text-black transition duration-300 ease-in-out">Certificates</Link>
               <Link to="/Portofolio" className="active:text-black hover:text-black transition duration-300 ease-in-out">My Project</Link>

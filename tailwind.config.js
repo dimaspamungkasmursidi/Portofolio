@@ -6,9 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", ...defaultTheme.fontFamily.sans],
+        neue: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
         montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: "#DCDDFF",

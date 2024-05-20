@@ -34,7 +34,7 @@ const Right = () => {
         <p ref={introRef} className=" text-secondary font-montserrat text-2 font-medium mb-4">
           INTRODUCTION
         </p>
-        <h1 ref={titleRef} className="font-inter text-36 font-bold leading-8 mb-4">
+        <h1 ref={titleRef} className="font-montserrat text-36 font-bold leading-8 mb-4">
           Front-End Web Developer
         </h1>
         <article ref={articleRef} className="font-montserrat text-2 leading-4">

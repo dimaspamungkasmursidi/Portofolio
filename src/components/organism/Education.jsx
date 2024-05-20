@@ -127,8 +127,8 @@ const Education = () => {
       >
         <div>
           <div className="smm:hidden">
-            <h1 ref={titleRef} className="font-inter text-36 font-bold mb-1">Education</h1>
-            <hr ref={hrRef} className="border-tertiary border-2 rounded w-20" />
+            <h1 ref={titleRef} className="font-neue tracking-wider text-36 font-bold">Education</h1>
+            <hr ref={hrRef} className="border-tertiary border-2 rounded w-20 mb-4" />
           </div>
           <img
             ref={imageRef}
@@ -139,7 +139,7 @@ const Education = () => {
         </div>
         <div className="w-full max-w-3xl smm:ml-4">
           <div className="hidden smm:block">
-            <h1 ref={titleRefMobile} className="font-inter text-36 font-bold mb-1">Education</h1>
+            <h1 ref={titleRefMobile} className="font-neue tracking-wider text-36 font-bold">Education</h1>
             <hr ref={hrRefMobile} className="border-tertiary border-2 rounded w-20" />
           </div>
           <br />

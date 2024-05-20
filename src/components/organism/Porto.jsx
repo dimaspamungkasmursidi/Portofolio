@@ -70,7 +70,7 @@ const Porto = () => {
     <>
       <section className="px-6 smm:px-14 py-6">
         <div className="py-4">
-          <h1 ref={titleRef} className="font-inter text-36 font-bold mb-1">Portofolio</h1>
+          <h1 ref={titleRef} className="font-neue text-36 font-bold">Portofolio</h1>
           <hr ref={hrRef} className="border-tertiary border-2 rounded w-20" />
         </div>
         <div className="smm:flex gap-4">

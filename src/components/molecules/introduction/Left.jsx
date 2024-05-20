@@ -49,7 +49,7 @@ const Left = () => {
   return (
     <>
       <div className="w-[11.5rem] mb-10 md:mt-12">
-        <h1 ref={titleRef} className="font-inter text-36 font-bold leading-10 mb-4">
+        <h1 ref={titleRef} className="font-neue tracking-widest text-40 font-semibold leading-10 mb-2">
           Dimas Pamungkas Mursidi.
         </h1>
         <hr ref={hrRef} className="border-tertiary border-2 rounded w-20" />

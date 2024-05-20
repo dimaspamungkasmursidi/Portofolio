@@ -31,11 +31,11 @@ const Skills = ({ icon: Icon, title, desc }) => {
   return (
     <div
       ref={skillRef}
-      className="xsm:w-[14rem] xsm:h-[14rem] p-4 bg-primary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+      className="xsm:w-[14rem] xsm:h-[14rem] sm:w-80 p-4 bg-primary rounded-md shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
     >
       <Icon className="w-12 h-12 text-secondary" />
-      <h1 className="font-inter text-black font-semibold">{title}</h1>
-      <p className="font-montserrat text-1 text-black">{desc}</p>
+      <h1 className="font-montserrat text-black font-semibold">{title}</h1>
+      <p className="font-montserrat text-2 text-black">{desc}</p>
     </div>
   );
 };
@@ -61,7 +61,7 @@ const skillItems = [
 const SkillsList = () => {
   return (
     <div className="">
-      <div className="flex flex-wrap justify-center gap-4 md:gap-20">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-10">
         {skillItems.map((item, index) => (
           <Skills key={index} {...item} className="" />
         ))}
