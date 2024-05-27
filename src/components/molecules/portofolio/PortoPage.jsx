@@ -165,20 +165,21 @@ const portoItems = [
     stack: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
       "https://cdn.simpleicons.org/tailwindcss/06B6D4.svg",
+      "https://camo.githubusercontent.com/4f15f0c693cdabe01aeb238dd83bc8abb92efa3604dd42aaa8851f4de9ad0c06/68747470733a2f2f677265656e736f636b2e636f6d2f75706c6f6164732f6d6f6e74686c795f323032305f30332f747765656e6d61782e706e672e63663237393136653932366662623332386666323134663636623463383432392e706e67",
     ],
     category: "Web Development",
   },
   {
-    image:
-      "https://user-images.githubusercontent.com/6929121/87441911-486bf600-c611-11ea-9d45-94c215733cf7.png",
-    title: "Cooming Soon",
-    desc: "this website is coming soon",
+    image: "/images/itisfun.png",
+    title: "IT Is Fun Studio",
+    desc: "IT Is Fun Studio is a provider of website creation services that prioritizes quality and customer satisfaction. We specialize in designing and developing responsive, modern, and functional websites, ensuring an optimal user experience on all devices. With our experienced professional team, we are ready to help you build a strong and attractive online presence.",
     descStack: "Tech Stack",
-    livePreview: "Live preview : ",
-    link: "",
+    livePreview: "Live preview : https://itisfun.vercel.app/",
+    link: "https://itisfun.vercel.app/",
     stack: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
       "https://cdn.simpleicons.org/tailwindcss/06B6D4.svg",
+      "https://cdn.simpleicons.org/framer/#000000.svg",
     ],
     category: "Web Development",
   },

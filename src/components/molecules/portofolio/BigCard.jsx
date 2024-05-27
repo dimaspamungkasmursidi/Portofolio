@@ -56,6 +56,11 @@ const BigCard = () => {
               alt="TailwindCSS"
               className="w-12 h-10"
             />
+            <img
+              src="https://camo.githubusercontent.com/4f15f0c693cdabe01aeb238dd83bc8abb92efa3604dd42aaa8851f4de9ad0c06/68747470733a2f2f677265656e736f636b2e636f6d2f75706c6f6164732f6d6f6e74686c795f323032305f30332f747765656e6d61782e706e672e63663237393136653932366662623332386666323134663636623463383432392e706e67"
+              alt="GitHub"
+              className="w-8 h-10"
+            />
           </div>
         </div>
       </div>
