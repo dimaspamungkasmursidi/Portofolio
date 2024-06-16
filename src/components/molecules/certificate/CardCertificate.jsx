@@ -82,6 +82,12 @@ const Certificate = [
     category: "Bootcamp & SI",
   },
   {
+    image: "/images/certif-cintessa.svg",
+    title: "FE ReactJS",
+    imageFull: "/images/certif-cintessa.svg",
+    category: "Bootcamp & SI",
+  },
+  {
     image: "/images/certif-devfest.svg",
     title: "Devfest Speaker",
     imageFull: "/images/certif-devfest.svg",
@@ -124,6 +130,12 @@ const Certificate = [
     category: "Web Development",
   },
   {
+    image: "/images/certif-dicoding3.jpg",
+    title: "Soft Skill",
+    imageFull: "/images/certif-dicoding3.jpg",
+    category: "Other",
+  },
+  {
     image: "/images/certif-dibimbing.svg",
     title: "Dibimbing FE",
     imageFull: "/images/certif-dibimbing.svg",
@@ -133,6 +145,12 @@ const Certificate = [
     image: "/images/cover-edspert.svg",
     title: "Edspert ReactJS",
     imageFull: "/images/certif-edspert.svg",
+    category: "Web Development",
+  },
+  {
+    image: "/images/certif-web.svg",
+    title: "Trends In Web",
+    imageFull: "/images/certif-web.svg",
     category: "Web Development",
   },
   {
